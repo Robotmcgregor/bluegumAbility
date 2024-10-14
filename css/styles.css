@@ -34,6 +34,79 @@ ul {
 } */
 /* CLASS */
 
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
 .form-check-padding {
   padding-top: 1rem;
 }
@@ -87,6 +160,8 @@ padding-bottom: 0.5rem;
 /* Container section */
 .container-fluid {
   padding: 4% 4% 5%;
+  border: 2px solid black; /* Add a 2px black border Delete once finished styling */
+  
 }
 
 #services .container-fluid {
@@ -126,6 +201,17 @@ background-color: #093145;
   /* background-color: #bdce93; */
 }
 
+/* Adjusting the navigation text size */
+.navbar-nav .nav-link {
+  font-size: 1.4rem; /* Adjust the size as needed */
+}
+
+/* Adjusting the company name size in the navbar */
+.navbar-brand {
+  font-size: 1.8rem; /* Adjust the size as needed */
+  /*font-weight: bold; /* Optional: Make it bold */
+}
+
 .banner {
   width: 100%;
 }
@@ -157,6 +243,16 @@ button:hover{
   height: 400px;
   margin-bottom: 30px;
 }
+
+.transition {
+  width: 50%; /* Reduce width to 50% */
+  margin: 0 auto; /* Center the div horizontally */
+  padding: 20px; /* Add padding inside the div */
+  outline: 2px solid black; /* Add a black outline with 2px width */
+  background-color: #ffffff; /* Optional: Set a white background */
+}
+
+
 .profile_h2{
   padding-bottom: 0.5rem;
 }
