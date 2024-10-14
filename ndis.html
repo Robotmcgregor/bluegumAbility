@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <!-- CSS stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="icon" href="images/favicon.ico"> -->
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lovers+Quarrel|Montserrat+Alternates|Pontano+Sans|Quattrocento+Sans|Qwigley&display=swap" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- FontAwsome -->
+  <script src="https://kit.fontawesome.com/e9eb3a54c1.js" crossorigin="anonymous"></script>
+
+
+  <!-- Java Script -->
+  <script>
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
+
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <section class="nav-section" id="title">
+    <div class="container-fluid navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Assured Care Australia (ACA)</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ndis.html">Disability Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aged-care-service.html">Aged Care Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ndis.html">NDIS Plan Coordination<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+      </nav>
+    </div>
+  </section>
+
+  <!-- banner -->
+  <div class="banner">
+    <img class="banner" src="images/CCA_web_banner_400h.jpg" alt="caring-nurse-helping-senior-man-sitting-on bench in gaden-asian-woman-caucasian-man-holdi">
+  </div>
+
+  <!-- Title -->
+<div class="container-fluid">
+  <section class="white-section">
+    <div class="container-fluid logo">
+      <h1 class="title-h1">Assured Care Australia</h1>
+      <h2 class="title-h2">Disability and Aged Care Support Services</h2>
+      <h3 class="title-h3">Helping people to live their best life</h3>
+    </div>
+  </section>
+
+  <section class="ndis">
+    <div class="ndis-container-fluid">
+
+
+      <div class="ndis-step-by-step">
+      <h2>Getting Prepared For The NDIS</h2>
+      <p>The National Disability Insurance Scheme (NDIS) enables people with ability to access services to help them live their best life. However, navigating the NDIS can prove to be a challenge for participants, their families, and carers.
+        That’s why Assured Care Australia has created an easy guide to help you:</p>
+      <div class="ndis-list-div">
+        <ul class="ndis-list">
+          <li><b>Step 1 - </b><a class="ndis-link hyper-link" href="#ndis-step-1">Find out if you are eligible for the NDIS</a></li>
+          <li><b>Step 2 - </b><a class="ndis-link hyper-link" href="#ndis-step-2">Apply for the NDIS</a></li>
+          <li><b>Step 3 - </b><a class="ndis-link hyper-link" href="#ndis-step-3">Prepare for your NDIS planning meeting.</a></li>
+          <li><b>Step 4 - </b><a class="ndis-link hyper-link" href="#ndis-step-4">Read and understand your DRAFT NDIS plan.</a></li>
+        </ul>
+      </div>
+</div>
+  </section>
+
+  <section class="ndis-steps">
+    <div class="ndis-container-fluid">
+    <div class="ndis-step-by-step">
+      <h3 id="ndis-step-1">Step 1 - Find out if you are eligible for the NDIS</h3>
+
+      <div class="ndis-list-div">
+        <ul class="ndis-list">
+          <li> <b>Question 1</b> - Are you aged between 7 and 65?</li>
+          <li><b>Question 2</b> - Do you live in Australia and have Australian residency?</li>
+          <li><b>Question 3</b> - Do you usually need support from a person because of a permanent and significant disability?</li>
+          <li><b>Question 4</b> - Do you use special equipment because of a permanent and significant disability?</li>
+          <li><b>Question 5</b> - Do you need some supports now to reduce your future needs?</li>
+        </ul>
+      </div>
+      <p>If you answered <em>YES</em> to all five questions, then you may be eligible for the NDIS.</p>
+      <p>Find out how to apply.</p>
+      <p>For more information go to <a href="https://www.ndis.gov.au/applying-access-ndis/how-apply" id="how-to-apply" class="hyper-link">www.ndis.gov.au/applying-access-ndis/how-apply</a></p>
+      <p>If you answered <em>NO</em> to any of these questions then it is unlikly that you are eligable to the NDIS. However, you may be able to access other supports. For other supports click <a
+          href="https://www.ndis.gov.au/applying-access-ndis/how-apply/receiving-your-access-decision/support-people-who-are-not-eligible" id="other-supports" class="hyper-link"> here.</a></p>
+    </div>
+
+    <!-- Step 1 -->
+
+    <div class="ndis-step-by-step">
+      <h3 id="ndis-step-2">Step 2 - Apply for the NDIS</h3>
+      <p>If you met the criteria and you would like to become a participant of the NDIS, you should apply.</p>
+      <p>To apply for the NDIS you can do one of the following:</p>
+      <div class="ndis-list-div">
+        <ul class="ndis-list">
+          <li class="contact-list">call the NDIA on <a href="tel:1800 800 110" id="call-NDIS" class="hyper-link"> 1800 800 110</a> and ask to make an Access Request<br>
+            &nbsp;</li>
+          <li>complete and submit a Access Request Form, once completed email it to NAT@ndis.gov.au;</li>
+          <li>contact your Local Area Coordinator (LAC) and ask to make an Access Request. Find your LAC <a href="https://www.ndis.gov.au/contact/locations" class="hyper-link"> here. </a></li>
+        </ul>
+      </div>
+      <p>For more information go to https://www.ndis.gov.au/applying-access-ndis/how-apply</p>
+    </div>
+
+    <!-- Step 2 -->
+
+    <div class="ndis-step-by-step">
+      <h3 id="ndis-step-3">Step 3 - Prepare for your NDIS planning meeting.</h3>
+      <p>Your NDIS plan is all about your goals, your activities, and your independence! So before your planning meeting think about the goals and activities that are important to you. What are the skills you want to learn to help you become more
+        active or independent.</p>
+      <div class="ndis-list-div">
+        <ul class="ndis-list">
+          <li>Think about what supports you currently receive, if your happy with the providers, and what could really help you achieve your goals.
+            Look at the <a href="https://www.ndis.gov.au/contact/locations" class="hyper-link"> NDIS website</a> to find out what the NDIS funds and how the NDIS works.</li>
+          <li>Gather all your relevant reports and assessments, your planner will want to see them</li>
+          <li>Have a go at completing the <a href="https://www.ndis.gov.au/about-us/publications/booklets-and-factsheets" class="hyper-link">NDIS – Planning Booklet 2. <a> It’s a great resource that could help you itemise and communicate your
+                activities to your planner. </li>
+          <li>Organise a meeting with a NDIS planner or <a href="https://www.ndis.gov.au/contact/locations" class="hyper-link">Local Area Coordinator (LAC)</a> at a time that suits you</li>
+        </ul>
+      </div>
+      <p>If you are having trouble, get in contact with the <a class="ndis-link" href="#ndis-step-1">Assured Care Australia</a> team. We are local and Territory owned and operated.</p>
+    </div>
+
+    <!-- Step 3 -->
+
+    <div class="ndis-step-by-step">
+      <h3 id="ndis-step-4">Step 4 - Read and understand your DRAFT NDIS plan.</h3>
+      <div class="ndis-list-div">
+        <ul class="ndis-list">
+
+          <li>Make sure your read your plan carefully, or get someone to help you.</li>
+          <li>Check your details like your name and address</li>
+          <li>Take a moment to understand what funds and services you have been allocated, and if your happy with your plan then you should notify your NDIS planner or LAC.</li>
+
+        </ul>
+
+
+</div>
+        <h4>What if you are not happy with your DRAFT plan?</h4>
+<div class="ndis-list-div">
+        <ul>
+          <li>If you are not happy with your plan, you should contact your NDIS planner or LAC and discuss your concerns.</li>
+        </ul>
+
+      </div>
+      <p>If you are having trouble please feel free to get in contact with one of our friendly <a class="ndis-link" href="#ndis-step-1">Assured Care Australia</a> team members. We are local and Territory owned and operated.</p>
+    </div>
+
+    <div class="next-step">
+      <h3>So now that you have an approved NDIS plan, what happens next? </h3>
+      <button class="btn btn-lg ACA-btn" onclick="location = 'XXXX.html">Click here to find out your next step</button>
+    </div>
+  </section>
+
+  </div>
+      </div>
+
+      <!-- <section class="white-section">
+        <div class="next-step">
+          <h3>So now that you have an approved NDIS plan, what happens next? </h3>
+          <button class="btn btn-lg ACA-btn" onclick="location = 'XXXX.html">Click here to find out your next step</button>
+        </div>
+
+      </section> -->
+
+  <i onclick="topFunction()" class="fas fa-arrow-alt-circle-up fa-5x" title="Go to top"></i>
+
+  <!-- Footer -->
+
+  <footer class="coloured-section">
+    <div class="container-fluid">
+
+      <i class="footer-i fab fa-twitter"></i>
+      <i class="footer-i fab fa-facebook-f"></i>
+      <i class="footer-i fab fa-instagram"></i>
+      <i class="footer-i fas fa-envelope"></i>
+
+      <p class="footer-p">© Copyright 2020, Assured Care Austrlia's IT Department</p>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

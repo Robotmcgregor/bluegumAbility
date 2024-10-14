@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <!-- CSS stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="icon" href="images/favicon.ico"> -->
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lovers+Quarrel|Montserrat+Alternates|Pontano+Sans|Quattrocento+Sans|Qwigley&display=swap" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- FontAwsome -->
+  <script src="https://kit.fontawesome.com/e9eb3a54c1.js" crossorigin="anonymous"></script>
+
+
+    <!-- Java Script -->
+    <script>
+      //Get the button:
+      mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+
+
+</head>
+
+<body>
+  <!-- Navigation -->
+  <section class="nav-section" id="title">
+    <div class="container-fluid navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Assured Care Australia (ACA)</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="disability-services.html">Disability Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aged-care-services.html">Aged Care Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ndis.html">NDIS Plan Coordination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+      </nav>
+    </div>
+  </section>
+  <!-- Nav Bar -->
+  <!-- banner -->
+<div class="banner">
+  <img class="banner" src="images/CCA_web_banner_400h.jpg" alt="caring-nurse-helping-senior-man-sitting-on bench in gaden-asian-woman-caucasian-man-holdi">
+  <!-- <div class="below-banner">
+  </div> -->
+</div>
+
+<!-- banner -->
+
+  <!-- Title -->
+
+  <section class="wwhite-section">
+    <div class="container-fluid logo">
+      <h1 class="title-h1">Assured Care Australia</h1>
+      <h2 class="title-h2">Disability and Aged Care Support Services</h2>
+      <h3 class="title-h3">Helping people to live their best life</h3>
+
+    </div>
+
+  </section>
+
+  <!-- Services -->
+
+  <section class="coloured-section" id="services">
+        <div class="container-fluid">
+
+    <h2 class="section-h2">A Plan and Servives for Everyones Needs</h2>
+    <h3 class="section-h3">Let us help you live your best life.</h3>
+</div>
+    <!-- Services -->
+
+    <!-- Cards -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top" src="images/photo-cute-little-girl-with-painted-hands.jpg" alt="Card image cap">
+              <h5 class="card-title">Disability Services</h5>
+              <p class="card-text">Assured Care Australia will manage all aspects of a persons needs, including training, recreation, finatials, and supported indipendant living assistance.</p>
+              <!-- <button type="button" class="btn btn-dark btn-lg">Find Out More</button> -->
+              <button class="btn btn-lg ACA-btn" onclick="location = 'XXXX.html'">Find Out More</button>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top" src="images/photo-group-of-senior-people-meeting-outdoors.jpg" alt="Card image cap">
+              <h5 class="card-title">Aged Care Services</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <button class="btn btn-lg ACA-btn" onclick="location = 'XXXX.html'">Find Out More</button>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top" src="images/NDIS-provider.jpg" alt="Card image cap">
+              <h5 class="card-title">NDIS and Plan Coordination</h5>
+              <p class="card-text">We are an NDIS Registered Provider. Click here to find out more about the NDIS and if you are eligble.</p>
+              <button class="btn btn-lg ACA-btn" onclick="location = 'NDIS.html'">Find Out More</button>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top" src="images/NDIS-provider.jpg" alt="Card image cap">
+              <h5 class="card-title">The Hub</h5>
+              <p class="card-text">Usefull links, activitiesWe are an NDIS Registered Provider. Click here to find out more about the NDIS and if you are eligble.</p>
+              <!-- <button type="button" class="btn btn-dark btn-lg download-button">Contact Us</button> -->
+              <button class="btn btn-lg ACA-btn" onclick="location = 'XXXX.html'">Find Out More</button>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <!-- Card -->
+
+  <!-- Profile -->
+
+  <section class="white-section" id="testimonials">
+    <div class="container-fluid">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="false">
+        <!-- <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol> -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2 class=title-h2>Meet the ACA Team</h2>
+            <h3 class="title-h3">Taane Aratema</h3>
+            <img class="profile-image" src="images/Taane_profile.jpg" alt="person1-testomonial">
+            <p class=profile-text>Blah blah blah</p>
+          </div>
+          <div class="carousel-item">
+            <h2 class="title-h2">Meet the ACA Team</h2>
+            <h3 class="title-h3">Rob McGregor</h3>
+            <img class="profile-image" src="images/Rob-profile-square.jpg" alt="person1-testomonial">
+            <p class="profile-text">Blah blah blah.</p>
+            <!-- <em>XXXXX, Darwin NT</em> -->
+          </div>
+          <div class="carousel-item">
+            <h2 class="title-h2">Meet the ACA Team</h2>
+            <h3 class="title-h3">Maria Lin</h3>
+            <img class="profile-image" src="images/Maria-profile.jpg" alt="person1-testomonial">
+            <p class="profile-text">Blah blah blah.</p>
+            <!-- <em>XXXXX, yyyyyyyyyT</em> -->
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <i onclick="topFunction()" class="fas fa-arrow-alt-circle-up fa-5x" title="Go to top"></i>
+
+
+  <!-- Footer -->
+
+  <footer class="coloured-section">
+    <div class="container-fluid">
+
+      <i class="footer-i fab fa-twitter"></i>
+      <i class="footer-i fab fa-facebook-f"></i>
+      <i class="footer-i fab fa-instagram"></i>
+      <i class="footer-i fas fa-envelope"></i>
+
+      <p class="footer-p">© Copyright 2020, Assured Care Austrlia's IT Department</p>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

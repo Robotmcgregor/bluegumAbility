@@ -1,0 +1,391 @@
+/* ELEMENTS */
+
+body {
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-align: center;
+  background-color: white;
+}
+
+h1 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 5rem;
+}
+
+p {
+  font-family: 'Pontano Sans', sans-serif;
+}
+a {
+  color: #093145;
+}
+ul {
+  list-style-position: inside;
+  list-style-type: square;
+  margin: 1rem;
+  padding: 0rem;
+}
+
+.ndis-list {
+  list-style-position: outside;
+}
+
+/* li {
+  margin-bottom: -1.5rem;
+  margin-top: -0.5;
+} */
+/* CLASS */
+
+.form-check-padding {
+  padding-top: 1rem;
+}
+
+.form-button-padding {
+  margin-top: 1rem;
+}
+
+.title-h1 {
+  line-height: 1.5;
+  color: #093145;
+  font-weight: 900;
+}
+.title-h2 {
+font-family: 'Pontano Sans', sans-serif;
+color: #093145;
+font-weight: normal;
+font-size: 2rem;
+
+}
+.title-h3 {
+font-family: 'Pontano Sans', sans-serif;
+color: #093145;
+font-weight: normal;
+font-size: 1.5rem;
+}
+
+.section-h2 {
+/* font-family: 'Pontano Sans', sans-serif; */
+color: #FFFFFF;
+/* font-weight: normal;
+font-size: 2rem; */
+
+}
+.section-h3 {
+color: #FFFFFF;
+margin-bottom: 1rem;
+padding-bottom: 0.5rem;
+}
+
+.footer-p{
+  padding-top: 1rem;
+  color: #FFFFFF;
+}
+
+.contact-list {
+  margin-bottom: -1.5rem;
+  margin-top: -0.5;
+}
+
+/* Container section */
+.container-fluid {
+  padding: 4% 4% 5%;
+}
+
+#services .container-fluid {
+  padding: 4% 2% 1%;
+}
+
+.navigation {
+  padding-bottom: 5px;
+}
+.ndis-container-fluid{
+  padding:2% 12%
+}
+
+.next-step {
+  padding: 2rem 0rem;
+}
+#title .container-fluid {
+  padding: 2% 14%;
+
+}
+
+/* .logo {
+padding-top: 5px; */
+
+}
+
+.section-heading {
+  line-height: 1.5;
+  font-size: 3rem;
+}
+
+.nav-section {
+background-color: #093145;
+}
+.coloured-section {
+  background-color: #093145;
+  /* background-color: #bdce93; */
+}
+
+.banner {
+  width: 100%;
+}
+
+.below-banner {
+height: 3rem;
+width: 100%;
+background-color: #093145;
+}
+
+button:hover{
+  background-color: #bdce93;
+  /* border-color: #093145; */
+}
+
+.ACA-btn{
+    background-color: #093145;
+    color: #FFF;
+}
+
+/* Contact */
+
+.form-group {
+  padding:1% 15%;
+}
+/* about */
+.Taane-image {
+  border-radius: 100%;
+  height: 400px;
+  margin-bottom: 30px;
+}
+.profile_h2{
+  padding-bottom: 0.5rem;
+}
+
+.profile-image {
+  margin: 5%
+  border-radius: 100%;
+  /* padding-top: 10rem; */
+}
+
+.profile-text{
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+/* product */
+
+.card {
+  width:100%;
+  margin-bottom: 2rem;
+  /* margin-left:100px; */
+}
+.product-card {
+  text-align: center;
+}
+
+.card-img-top{
+    width: : 10rem;
+  }
+
+
+.ndis-list-div {
+  width:35rem;
+  margin: auto;
+  padding: 10px;
+  text-align: left;
+}
+
+.product-heading {
+  text-align: left;
+  font-family: 'Qwigley', cursive;
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+.product-para {
+  text-align: justify;
+}
+
+.profile-image {
+  border-radius: 100%;
+  height: 20rem;
+}
+
+#profile-image {
+  margin: 7%
+}
+
+
+.footer-i{
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.contact-icon {
+  color: #093145;
+}
+
+
+.contact-div {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.contact-col {
+  padding:3rem 2rem;
+  /* padding-right: 2rem; */
+}
+
+.carousel-indicators{
+  margin-top: 1rem;
+  color: #093145;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carouselExampleIndicators{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.fa-arrow-alt-circle-up{
+  margin-bottom: 2rem;
+}
+.hyper-link{
+  color: #07A19D;
+  font-weight: 900;
+}
+
+/* Max width jquery */
+
+/* @media (min-width: 1281px) {
+
+  } */
+
+/* @media (max-width: 1280px) {
+  .Logo-image {
+    height: 150px;
+  } */
+
+@media (max-width: 940px) {
+  /* .Logo-image {
+    height: 100px;
+  } */
+  /* h1 {
+    display: none !important;
+  } */
+
+  h1{
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .contact-col {
+    padding:2rem 2rem;
+  }
+  /* h3 {
+    font-size: 1.5rem;
+  } */
+   .title-h3 {
+    display: none !important;
+  }
+
+/*
+ul, li {
+  margin-left: 0;
+  padding-left: 0;
+} */
+  /* @media (max-width: 600px) { */
+  @media (max-width: 767px) {
+    /* .Logo-image {
+      height: 100px;
+    } */
+
+    h2 {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+      .contact-div {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .contact-col {
+        padding:1rem 1rem;
+        /* padding-right: 2rem; */
+      }
+
+    .title-h1 {
+      font-size: 2rem;
+    }
+    .social-media {
+      display: none !important;
+    }
+    /* p {
+      text-align: justify;
+    } */
+
+/* .contact-controls {
+  display: none !important;
+} */
+/* #services {
+  display: none !important;
+} */
+    /* h1 {
+      display: none !important;
+    } */
+
+    /* .contact-h2 {
+      font-family: serif;
+      font-size: 10rem;
+      color: black;
+    } */
+    /* h2 {
+      display: none !important;
+    } */
+    /* h3 {display: none !important;
+    } */
+    /* Container section */
+    /* .container-fluid {
+      padding: 2% 2% 2%;
+    } */
+
+    .contact-div {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .contact-col {
+      padding:1rem 1rem;
+      /* padding-right: 2rem; */
+    }
+
+
+
+@media (max-width: 600px) {
+        .card {
+          /* width: 95%; */
+          max-width: 86%;
+          margin-left: 7%;
+          text-align: center;
+}
+
+.profile-image {
+  border-radius: 100%;
+  height: 10rem;
+}
+
+#profile-image {
+  margin: 7%
+}
