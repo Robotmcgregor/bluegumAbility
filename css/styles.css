@@ -146,12 +146,12 @@ html, body {
   }
 
   .container-fluid-content {
-    padding: 4% 4% 5%;
+    padding: 4% 4% 1%;
     flex: 1;
     margin: 0 auto;   
     width: 80%;  
     text-align: center; 
-    border: 3px solid grey;  /* Adds a grey border */
+    /* border: 3px solid grey;  Adds a grey border */
     border-radius: 5px;      /* Rounds the corners */
     background-color: white; /* Optional: Add a background to make the div stand out */
   }
@@ -161,6 +161,12 @@ html, body {
   background-color: #FFFFFF;
   /* background-color: #bdce93; */
  }
+
+ .off-white-section {
+  background-color: #F7F9F9;
+
+ }
+
 
 /* --------------------------------------- Navbar -------------------------------------- */
 
@@ -175,7 +181,7 @@ html, body {
     }
 
     .content-box {
-      padding-bottom: 1px;
+      padding-bottom: 2rem;
       }
 
        /* Increase font size in the navbar */
@@ -192,7 +198,7 @@ html, body {
 
 /* Highlight the background on hover */
 .navbar-nav .nav-link:hover {
-    background-color: #f0f0f0; /* Light gray background on hover */
+    background-color: #160f331e; /* Light gray background on hover */
     border-radius: 2px; /* Optional: adds rounded corners */
     transition: background-color 0.3s ease; /* Smooth transition */
 }
@@ -218,6 +224,22 @@ html, body {
   align-items: center;        /* Align text and logo in the center vertically */
   padding-bottom: 5px;        /* Adjusts the text down slightly */
 }
+
+.custom-btn {
+  background-color:  #F28C28;  /* Custom background color */
+  color: white;               /* Custom text color */
+  border: none;               /* Remove border */
+  padding: 10px 20px;         /* Add padding for button look */
+  text-decoration: none;      /* Remove underline from the link */
+  border-radius: 2px;         /* Optional: Add rounded corners */
+  display: inline-block;      /* Make it behave like a button */
+}
+
+.custom-btn:hover {
+  background-color: #0D1F30;  /* Darker background on hover */
+  color:  #FFFFFF;               /* Ensure text remains white on hover */
+}
+
 /* --------------------------------------- Banner -------------------------------------- */
 
  /* Banner Section */
@@ -225,7 +247,7 @@ html, body {
     background-color: #0D1F30;
     background-size: cover;
     background-position: center;
-    height: 300px;
+    /* height: 300px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,11 +258,16 @@ html, body {
 }
 
 .banner-content {
-    /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent background behind the text */
-    /* padding: 30px; */
-    /* border-radius: 10px; */
-    border: 1px solid yellow;
-    ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.banner-img {
+  max-width: 100%;    /* Ensures the image fits within the container */
+  height: auto;       /* Maintains the aspect ratio */
+  display: block;     /* Ensures proper rendering of the image */
+  border-radius: 5px; /* Optional: Adds a slight border radius to the image */
 }
 
 .banner-content h1 {
@@ -253,16 +280,28 @@ html, body {
     font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .banner-left {
-    padding: 100px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* Vertically centers the text */
+  align-items: center;       /* Horizontally centers the text */
+  text-align: center;        /* Ensures the text itself is centered */
 }
+/* .left-cell {
+  padding: 2rem;
+} */
+ /* .banner-left {
+    padding: 120px;
 
-.banner-width {
+} */
+
+/* .banner-width {
     width: 100%;
-}
+} */
 /* --------------------------------------- Footer -------------------------------------- */
 
  /* Footer Section */
@@ -314,7 +353,6 @@ html, body {
          .title-h3 {
           display: none !important;
         }
-        wq  s GFVB
         .footer-p {
             display: none !important;
         }
@@ -322,10 +360,7 @@ html, body {
       }
       
       /* -------------------------------- standard mobile phone iPad mini -------------------- */
-      @media (max-width: 767px) {
-          /* .Logo-image {
-            height: 100px;
-          } */
+      @media (max-width: 768px) {
       
           h2 {
             font-size: 2rem;
@@ -356,13 +391,17 @@ html, body {
             display: none !important;
         }
 
+        .banner-left, .banner-img {
+          text-align: center;
+          width: 100%;      /* Stacks content vertically on smaller screens */
+        }
+
       }
       
       
       /* -------------------- Portrait mode phone and small tablets ---------------------- */
       @media (max-width: 600px) {
           .card {
-            /* width: 95%; */
             max-width: 86%;
             margin-left: 7%;
             text-align: center;
@@ -388,10 +427,17 @@ html, body {
         .footer-i {
             padding-left: 0.5rem;
             padding-right: 0.5rem;
-            font-size: 1rem; /* Increase the size of icons */
+            font-size: 1rem;
+        }
+        .banner-left, .banner-img {
+          text-align: center;
+          width: 100%;      /* Stacks content vertically on smaller screens */
         }
 
       
       }
+
+
+
   
 /* ----- #1E73BE ----- */
