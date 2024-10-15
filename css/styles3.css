@@ -43,10 +43,7 @@ html, body {
   }
   
 
-  /* Troubleshooting */
-div {
-    outline: 2px solid red; /* Outline around every div */
-}
+
    /* CLASS */
 
 .form-check-padding {
@@ -209,7 +206,7 @@ div {
 
 .banner-content {
     /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent background behind the text */
-    /* padding: 10px; */
+    /* padding: 30px; */
     /* border-radius: 10px; */
     border: 1px solid yellow;
     ;
@@ -228,7 +225,7 @@ div {
 }
 
 .banner-left {
-    padding: 60px;
+    padding: 100px;
 
 }
 
