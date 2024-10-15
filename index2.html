@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <!-- CSS stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles3.css">
+  <!-- <link rel="icon" href="images/favicon.ico"> -->
+
+  <!-- Google fonts -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lovers+Quarrel|Montserrat+Alternates|Pontano+Sans|Quattrocento+Sans|Qwigley&display=swap" rel="stylesheet"> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- FontAwsome -->
+  <script src="https://kit.fontawesome.com/e9eb3a54c1.js" crossorigin="anonymous"></script>
+
+
+    <!-- Java Script -->
+    <script>
+      //Get the button:
+      mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {
+        scrollFunction()
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+
+
+</head>
+
+<body>
+<!-- Navigation -->
+<section class="nav-section" id="title">
+    <div class="navigation">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Bluegum Ability Services</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <!-- Dropdown for Services -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="service1.html">Service 1</a>
+                <a class="dropdown-item" href="service2.html">Service 2</a>
+                <a class="dropdown-item" href="service3.html">Service 3</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- <section class="banner-section">
+    <div class="banner-content">
+      <div class="left-cell">
+        <h1>Welcome to Bluegum Ability Services</h1>
+        <p>Providing the best services for those in need</p>
+      </div>
+      <div class="right-cell">  -->
+        <!-- You can add any content here for the right cell -->
+        <!-- <img src="images/pexels-disability-photo-banner.jpg" alt="Service Image" style="width: 80%;">
+      </div>
+    </div>
+  </section> -->
+  
+
+  <section class="banner-section">
+    <div class = "banner-width">
+      <div class="banner-content">
+        <div class="row">
+          <div class="col-md-8 banner-left">
+            <h1>Welcome to Bluegum Ability Services</h1>
+            <p>Providing the best services for those in need</p>
+          </div>
+        <div class="col-md-4">
+          <!-- You can add any content here for the right cell -->
+          <img src="images/pexels-disability-photo-banner.jpg" alt="Service Image" style="height:300px;">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- <div class="image-container">
+    <img src="images/pexels-disability-photo-banner.jpg" alt="Description of image" class="styled-image">
+</div> -->
+
+<section class="sub-banner-section">
+  <div class="container-fluid navigation"></div>
+</div>
+</section>
+
+<section class="coloured-section">
+  <div class="container-fluid navigation"></div>
+</div>
+</section>
+
+<section class="coloured-section">
+  <div class="container-fluid navigation"></div>
+</div>
+
+  </section>
+  
+
+
+  <footer class="footer">
+    <h3>Bluegum Ability Services</h3>
+    <p class="footer-r">Registered NDIS provider</p>
+    <div>
+      <i class="footer-i fab fa-twitter"></i>
+      <i class="footer-i fab fa-facebook-f"></i>
+      <i class="footer-i fab fa-instagram"></i>
+      <i class="footer-i fas fa-envelope"></i>
+
+      <p class="footer-p">© Copyright 2024, Bluegum Ability, care of Troubleshoot IT</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

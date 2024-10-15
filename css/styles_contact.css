@@ -1,0 +1,153 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  header {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    margin-right: 15px;
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+/* Hero Section */
+.hero-section {
+    background-color: #1E73BE;
+    padding: 100px 0;
+    color: black;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+}
+
+/* Breadcrumb */
+.breadcrumb-container {
+    background-color: #13395f;
+    padding: 10px 0;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #1E73BE;
+}
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+  
+  /* Workforce Section */
+  .workforce-section {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .workforce-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .workforce-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Team Section */
+  .team-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+  }
+  
+  .team-section h3 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .team-section p {
+    font-size: 1.1rem;
+  }
+  
+  .team-section .btn-primary {
+    background-color: #1E73BE;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+  }
+  
+  .team-section img {
+    border-radius: 10px;
+  }
+
+  /* About Section Styles */
+.about-support-worker {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .about-support-worker h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1E73BE;
+  }
+  
+  .about-support-worker p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Disability Work Section */
+  .disability-work-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+  }
+  
+  .disability-work-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1E73BE;
+    margin-bottom: 40px;
+  }
+  
+  .info-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .info-card h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .info-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .info-card a {
+    color: #1E73BE;
+    text-decoration: none;
+  }
+  
+  .info-card a:hover {
+    text-decoration: underline;
+  }
