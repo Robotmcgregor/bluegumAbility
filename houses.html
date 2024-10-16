@@ -72,8 +72,8 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="houses.html">Supported Independent Living (SIL)</a>
-              <a class="dropdown-item" href="https://bluegum-ability-services.com">Service 2</a>
-              <a class="dropdown-item" href="https://bluegum-ability-services.com">Service 3</a>
+              <a class="dropdown-item" href="https://bluegum-ability-services.com">Support Coordination</a>
+              <a class="dropdown-item" href="https://bluegum-ability-services.com">Respite</a>
             </div>
           </li>
           <li class="nav-item">
@@ -107,8 +107,17 @@
     </div>
   </section>
 
+  <section class="sub-banner-section content-box off-white-section">
+    <div class="container-fluid-content off-white-section">
+    <h2>What is Supported Independent Living or SIL</h2>
+    <p>Supported Independent Living (SIL) is a type of support that helps individuals with disabilities live independently in shared or individual accommodations. It provides assistance with daily tasks and can be included as part of your NDIS plan to help you achieve greater independence and improve your quality of life.</p>
+    <h3>What makes Bluegum Ability SIL better than the rest?</h3>
+    ,<p>At Bluegum, you'll become part of our extended family, where your safety and comfort are our top priorities. We ensure you never have to share a room or live with someone you’re not comfortable with, providing a supportive and personalised living experience.</p>
+  </div>
+  </section>
+
   <!-- Home Section -->
-  <section class="container-fluid-content">
+  <section class="container-fluid-content houses-container">
     <div class="container mt-5 outline">
       <div class="row">
         <!-- Left Column - 8 wide -->
@@ -177,76 +186,77 @@
             <p>Fill out the form below to enquire about our Supported Independent Living (SIL) houses.</p>
 
             <form action="mailto:admin@bluegumability.com" method="post" enctype="text/plain">
-           <!-- First Name Field -->
-           <div class="form-group">
-            <label for="firstName">First Name:</label>
-            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name" required>
+          <!-- First Name Field -->
+          <div class="form-group">
+            <label for="firstName">First Name: <span style="color: red;">*</span></label>
+            <input type="text" class="form-control" id="firstName" name="first_name" placeholder="Enter your first name" required>
           </div>
 
           <!-- Last Name Field -->
           <div class="form-group">
-            <label for="lastName">Last Name:</label>
-            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your last name" required>
+            <label for="lastName">Last Name: <span style="color: red;">*</span></label>
+            <input type="text" class="form-control" id="lastName" name="last_name" placeholder="Enter your last name" required>
           </div>
+
+          <!-- Gender Field -->
+          <div class="form-group">
+            <label>Select your gender</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" id="genderMale" value="Male" required>
+              <label class="form-check-label" for="genderMale">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="Female" required>
+              <label class="form-check-label" for="genderFemale">Female</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" id="genderNonBinary" value="Non-Binary" required>
+              <label class="form-check-label" for="genderNonBinary">Non-Binary</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="gender" id="genderOther" value="Other">
+              <label class="form-check-label" for="genderOther">Other</label>
+            </div>
+
+            <!-- Free text input for 'Other' gender -->
+            <div id="otherGenderDiv" style="display: none;" class="mt-2">
+              <label for="otherGenderText">Please specify:</label>
+              <input type="text" class="form-control" id="otherGenderText" name="otherGender">
+            </div>
+          </div>
+
+        <!-- Date of Birth Field -->
+        <div class="form-group">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" class="form-control" id="dob" placeholder="Enter your date of birth" >
+        </div>
 
           <!-- Email Field -->
           <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" >
           </div>
 
           <!-- Phone Number Field -->
           <div class="form-group">
-            <label for="phone">Phone Number:</label>
+            <label for="phone">Phone Number: <span style="color: red;">*</span></label>
             <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
           </div>
 
-              <!-- Date of Birth Field -->
-              <div class="form-group">
-                <label for="dob">Date of Birth:</label>
-                <input type="date" class="form-control" id="dob" placeholder="Enter your date of birth" required>
-              </div>
-
-              <!-- Gender Field -->
-              <div class="form-group">
-                <label>Select your gender</label><br>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="gender" id="genderMale" value="Male" required>
-                  <label class="form-check-label" for="genderMale">Male</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="Female" required>
-                  <label class="form-check-label" for="genderFemale">Female</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="gender" id="genderNonBinary" value="Non-Binary" required>
-                  <label class="form-check-label" for="genderNonBinary">Non-Binary</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="gender" id="genderOther" value="Other">
-                  <label class="form-check-label" for="genderOther">Other</label>
-                </div>
-
-                <!-- Free text input for 'Other' gender -->
-                <div id="otherGenderDiv" style="display: none;" class="mt-2">
-                  <label for="otherGenderText">Please specify:</label>
-                  <input type="text" class="form-control" id="otherGenderText" name="otherGender">
-                </div>
-              </div>
 
               <!-- NDIS Plan Field -->
               <div class="form-group">
-                <label>Do you have an NDIS plan?</label><br>
+                <label>Do you have an NDIS plan? <span style="color: red;">*</span></label><br>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="ndisPlan" id="ndisYes" value="Yes" required>
+                  <input class="form-check-input" type="radio" name="ndisPlan" id="ndisYes" value="Yes" >
                   <label class="form-check-label" for="ndisYes">Yes</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="ndisPlan" id="ndisNo" value="No" required>
+                  <input class="form-check-input" type="radio" name="ndisPlan" id="ndisNo" value="No" >
                   <label class="form-check-label" for="ndisNo">No</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="ndisPlan" id="ndisDontKnow" value="Don't know" required>
+                  <input class="form-check-input" type="radio" name="ndisPlan" id="ndisDontKnow" value="Don't know" >
                   <label class="form-check-label" for="ndisDontKnow">Don't Know</label>
                 </div>
               </div>
@@ -255,6 +265,7 @@
               <button type="submit" class="btn btn-primary">Submit Enquiry</button>
             </form>
           </div>
+          <p class="mt-4"><span style="color: red;">*</span> Indicate required fields</p>
         </div>
       </div>
     </div>
