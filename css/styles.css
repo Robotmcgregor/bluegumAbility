@@ -1,3 +1,11 @@
+/* TEST / TEST / TEST */
+.outline{
+    outline: 1px solid red;
+}
+
+
+
+
 /* ELEMENTS */
 
 html, body {
@@ -369,6 +377,19 @@ html, body {
   margin: 0;
 }
 
+/* --------------------------------------- Houses -------------------------------------- */
+
+.container-fluid-content-houses {
+  padding: 4% 4% 1%;
+  flex: 1;
+  margin: 0 auto;   
+  width: 100%;  
+  text-align: center; 
+  /* border: 3px solid grey;  Adds a grey border */
+  border-radius: 5px;      /* Rounds the corners */
+  background-color: white; /* Optional: Add a background to make the div stand out */
+}
+
   /* ============================================== Devices ==============================================*/
 
     /* ----------------------------- Small Laptop and landscape tablets ------------------------------------- */
@@ -483,8 +504,25 @@ html, body {
         border-color: #007bff;
       }
       
-      /* -------------------- Portrait mode phone and small tablets ---------------------- */
-      @media (max-width: 600px) {
+
+      /* --------------------------------- Houses --------------------------------- */
+      .card {
+        margin-bottom: 20px; /* Adds spacing between cards */
+        margin-left: 10px;   /* Adds space to the left of each card */
+        margin-right: 10px;  /* Adds space to the right of each card */
+        margin-bottom: 20px; /* Adds spacing between cards */
+      }
+      
+      .houses-container {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+
+        /* -------------------- Portrait mode phone and small tablets ---------------------- */
+
+
+    @media (max-width: 600px) {
           .card {
             max-width: 86%;
             margin-left: 7%;
