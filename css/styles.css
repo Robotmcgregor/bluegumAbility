@@ -324,13 +324,56 @@ html, body {
   }
 
 
+/* ------------------------------------------------- Gallery -------------------------------------- */
 
+.photo-gallery {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.photo-gallery h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 20px; /* Space between grid items */
+}
+
+.gallery-item {
+  text-align: center; /* Center text (caption) under each image */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1; /* Forces the image to be a square */
+  border-radius: 8px;
+  object-fit: cover; /* Ensures the image covers the square without stretching */
+  display: block;
+  margin-bottom: 10px;
+}
+
+.caption-container {
+  border: 2px solid grey;  /* Grey outline */
+  padding: 10px;
+  border-radius: 2px;
+  background-color: #f9f9f9; /* Light grey background */
+}
+
+.caption {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+}
 
   /* ============================================== Devices ==============================================*/
 
     /* ----------------------------- Small Laptop and landscape tablets ------------------------------------- */
 
-    @media (max-width: 940px) {
+    @media (max-width: 1024px) {
         /* .Logo-image {
           height: 100px;
         } */
@@ -355,6 +398,10 @@ html, body {
         }
         .footer-p {
             display: none !important;
+        }
+
+        .gallery-container {
+          grid-template-columns: repeat(2, 1fr);
         }
 
       }
@@ -396,8 +443,45 @@ html, body {
           width: 100%;      /* Stacks content vertically on smaller screens */
         }
 
+        .gallery-container {
+          grid-template-columns: 1fr; /* 1 column for small screens */
+        }
+
+      }
+
+      /* --------------------------------- Pagination --------------------------------- */
+
+      .pagination {
+        display: flex;
+        justify-content: center;  /* Centers the pagination */
+        margin-top: 20px;         /* Adds spacing above the pagination */
       }
       
+      .page-item {
+        list-style: none;         /* Removes default list styling */
+      }
+      
+      .page-link {
+        text-decoration: none;
+        color: #007bff;           /* Bootstrap primary blue */
+        padding: 10px 15px;
+        border: 1px solid #007bff;/* Border around each page button */
+        border-radius: 2px;
+        margin: 0 5px;            /* Adds space between page buttons */
+        transition: background-color 0.3s ease;
+      }
+      
+      .page-link:hover {
+        background-color: #007bff;
+        color: white;
+      }
+      
+      /* Optional: Active state style */
+      .page-item.active .page-link {
+        background-color: #007bff;
+        color: white;
+        border-color: #007bff;
+      }
       
       /* -------------------- Portrait mode phone and small tablets ---------------------- */
       @media (max-width: 600px) {
@@ -432,6 +516,10 @@ html, body {
         .banner-left, .banner-img {
           text-align: center;
           width: 100%;      /* Stacks content vertically on smaller screens */
+        }
+
+        .gallery-container {
+          grid-template-columns: 1fr; /* 1 column for small screens */
         }
 
       
