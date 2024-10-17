@@ -14,7 +14,6 @@ html, body {
     background-color: white;
     height: 100%;
     margin: 0;
-  }
 
   body {
     display: flex;
@@ -182,30 +181,30 @@ html, body {
     /* background-color: #0D1F30; */
     background-color: #FFFFFF;
   
-    }
+  }
 
 .navigation {
     padding-bottom: 2px;
-    }
+  }
 
-    .content-box {
-      padding-bottom: 2rem;
-      }
+.content-box {
+  padding-bottom: 2rem;
+  }
 
-      .logo-img {
-        height: 3rem;
-        width: auto;
-        margin-right: 10px;
-      }
+.logo-img {
+  height: 3rem;
+  width: auto;
+  margin-right: 10px;
+  }
 
-       /* Increase font size in the navbar */
+/* Increase font size in the navbar */
 .navbar-nav .nav-link {
-    font-size: 1.4rem; /* Adjust the font size as needed */
+    font-size: 1.6rem; /* Adjust the font size as needed */
     padding-right: 20px; /* Optional: Adds padding inside the link */
     color: black; /* Set text color to black */
   }
 
-  /* Add padding between navigation items */
+/* Add padding between navigation items */
 .navbar-nav .nav-item {
     padding-right: 20px; /* Adjust the spacing as needed */
 }
@@ -625,9 +624,35 @@ html, body {
 
   /* Shrink the logo image */
   .navbar-brand img {
-    height: 2rem; /* Reduce the height of the image */
-    margin-right: 5px; /* Adjust margin if needed */
+    height: 2rem; /* Adjust the height of the image */
+    margin-right: 5px;
   }
+
+  /* Hide the "Bluegum Ability Services" text */
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-brand img {
+    display: inline; /* Ensure logo stays visible */
+  }
+
+  .navbar-brand {
+    font-size: 0; /* Set font size to 0 to hide the text */
+  }
+
+    /* Hide the "Bluegum Ability Services" text */
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+
+  .navbar-brand img {
+    height: 2rem; /* Adjust the height of the image */
+    margin-right: 5px;
+  }
+}
 
   /* Shrink the font size of the navigation links */
   .navbar-nav .nav-link {
@@ -661,14 +686,14 @@ html, body {
     text-align: center;
   }
 
-  .profile-image {
+  /* .profile-image {
     border-radius: 100%;
     height: 10rem;
   }
 
   .profile-image {
     margin: 7%;
-  }
+  } */
 
   .footer-p {
     display: none !important;
