@@ -405,46 +405,61 @@ body {
 
   /* ============================================== Devices ==============================================*/
 
-    /* ----------------------------- Small Laptop and landscape tablets ------------------------------------- */
+/* =================================== Small Laptop and landscape tablets ================================= */
 
-    @media (max-width: 1024px) {
-        /* .Logo-image {
-          height: 100px;
-        } */
-        /* h1 {
-          display: none !important;
-        } */
-      
-        h1{
-          font-size: 2rem;
-        }
-        h2 {
-          font-size: 1.5rem;
-        }
-        h3 {
-          font-size: 1rem;
-        }
-        h4 {
-          font-size: 0.8rem;
-        }
-        .contact-col {
-          padding:2rem 2rem;
-        }
-        /* h3 {
-          font-size: 1.5rem;
-        } */
+@media (max-width: 1024px) {
 
-                  /* Shrink the logo image */
+  h1{
+    font-size: 10px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 0.8rem;
+  }
+  .contact-col {
+    padding:2rem 2rem;
+  }
+
+  /* ----------------Navbar---------------- */
+
+  /* Logo image */
+
+  /* Shrink the logo image */
   .navbar-brand img {
-    height: 2rem; /* Reduce the height of the image */
-    margin-right: 5px; /* Adjust margin if needed */
+    height: 2rem; /* Adjust the height of the image */
+    margin-right: 5px;
   }
 
-  /* Shrink the font size of the navigation links */
-  .navbar-nav .nav-link {
-    font-size: 1.0rem; /* Reduce font size */
-    padding: 8px 10px; /* Adjust padding for smaller screens */
+  /* Hide the "Bluegum Ability Services" text */
+  .navbar-brand {
+    display: flex;
+    align-items: center;
   }
+
+  .navbar-brand img {
+    display: inline; /* Ensure logo stays visible */
+  }
+
+  .navbar-brand {
+    font-size: 0; /* Set font size to 0 to hide the text */
+  }
+
+  /* Hide the "Bluegum Ability Services" text */
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-brand img {
+    height: 2rem; /* Adjust the height of the image */
+    margin-right: 5px;
+  }
+
 
   /* Adjust padding between navigation items */
   .navbar-nav .nav-item {
@@ -457,10 +472,20 @@ body {
     font-size: 0.8rem;  /*Adjust the font size of the links */
   }
 
+     /* --------------------------------- Toggle --------------------------------- */
 
+    /* Make the hamburger toggle icon smaller */
+    .navbar-toggler-icon {
+      width: 1.5rem;  /* Adjust the width */
+      height: 1.5rem; /* Adjust the height */
+    }
+  
+    /* Optional: Adjust the padding for the navbar-toggler button */
+    .navbar-toggler {
+      padding: 0.25rem 0.5rem; /* Adjust padding if needed */
+    }
 
-
-    .title-h3 {
+  .title-h3 {
     display: none !important;
   }
   .footer-p {
@@ -473,11 +498,12 @@ body {
 
 }
       
-/* -------------------------------- standard mobile phone iPad mini -------------------- */
+/* ======================================== standard mobile phone iPad mini ======================================= */
+
 @media (max-width: 768px) {
 
   h1 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   h2 {
     font-size: 1.5rem;
@@ -491,26 +517,6 @@ body {
 
   .banner-section h2 {
     display: none;
-  }
-
-          /* Shrink the logo image */
-  .navbar-brand img {
-    height: 2rem; /* Reduce the height of the image */
-    margin-right: 5px; /* Adjust margin if needed */
-  }
-
-  /* Shrink the font size of the navigation links */
-  .navbar-nav .nav-link {
-    font-size: 1.0rem !important; /* Reduce font size */
-    padding: 8px 10px; /* Adjust padding for smaller screens */
-  }
-
-  /* Adjust padding between navigation items */
-  .navbar-nav .nav-item {
-    padding-right: 10px; /* Adjust padding as needed */
-  }
-  .nav-section a {
-    font-size: 1.2rem !important;  /*Adjust the font size of the links */
   }
 
   .contact-div {
@@ -604,7 +610,7 @@ body {
 }
 
 
-/* -------------------- Portrait mode phone and small tablets ---------------------- */
+/* ============================== Portrait mode phone and small tablets ==================================== */
 
 
 @media (max-width: 600px) {
@@ -630,48 +636,8 @@ body {
     font-size: 1rem;
   } */
 
-  /* Shrink the logo image */
-  .navbar-brand img {
-    height: 2rem; /* Adjust the height of the image */
-    margin-right: 5px;
-  }
+  /* ----------------Navbar---------------- */
 
-  /* Hide the "Bluegum Ability Services" text */
-  .navbar-brand {
-    display: flex;
-    align-items: center;
-  }
-
-  .navbar-brand img {
-    display: inline; /* Ensure logo stays visible */
-  }
-
-  .navbar-brand {
-    font-size: 0; /* Set font size to 0 to hide the text */
-  }
-
-    /* Hide the "Bluegum Ability Services" text */
-    .navbar-brand {
-      display: flex;
-      align-items: center;
-    }
-
-  .navbar-brand img {
-    height: 2rem; /* Adjust the height of the image */
-    margin-right: 5px;
-  }
-
-
-  /* Shrink the font size of the navigation links */
-  .navbar-nav .nav-link {
-    font-size: 0.8rem; /* Reduce font size */
-    padding: 8px 10px; /* Adjust padding for smaller screens */
-  }
-
-  /* Adjust padding between navigation items */
-  .navbar-nav .nav-item {
-    padding-right: 10px; /* Adjust padding as needed */
-  }
 
   /* Adjust dropdown item font size */
   .dropdown-menu .dropdown-item {
@@ -684,24 +650,41 @@ body {
     font-size: 1.2rem;  /* Adjust the font size of the links */
   }
 
+  /* --------------------------------- Banner --------------------------------- */ 
+
+  .banner-section {
+    background-size: cover;
+    background-position: center;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  .banner-section h1 {
+    display: none;
+  }
+  
   .banner-section h2 {
     display: none;
   }
 
+  .banner-section h3 {
+    padding-top: 10px;
+  }
+
+  /* --------------------------------- Cards --------------------------------- */
   .card {
     max-width: 86%;
     margin-left: 7%;
     text-align: center;
   }
 
-  /* .profile-image {
-    border-radius: 100%;
-    height: 10rem;
-  }
 
-  .profile-image {
-    margin: 7%;
-  } */
+  /* --------------------------------- Footer --------------------------------- */
 
   .footer-p {
     display: none !important;
