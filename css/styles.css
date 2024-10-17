@@ -14,12 +14,13 @@ html, body {
     background-color: white;
     height: 100%;
     margin: 0;
+}
 
-  body {
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
+}
   
   h1 {
     font-family: 'Montserrat Alternates', sans-serif;
@@ -199,10 +200,17 @@ html, body {
 
 /* Increase font size in the navbar */
 .navbar-nav .nav-link {
-    font-size: 1.6rem; /* Adjust the font size as needed */
+    font-size: 1.2rem !important; /* Adjust the font size as needed */
     padding-right: 20px; /* Optional: Adds padding inside the link */
     color: black; /* Set text color to black */
   }
+
+  /* Increase font size in the dropdown menu */
+.dropdown-menu .dropdown-item {
+  font-size: 1.1rem !important; /* Adjust the font size as needed */
+  padding: 8px 10px; /* Optional: Adds padding inside the dropdown item */
+  color: black; /* Set text color to black */
+}
 
 /* Add padding between navigation items */
 .navbar-nav .nav-item {
@@ -452,18 +460,18 @@ html, body {
 
 
 
-         .title-h3 {
-          display: none !important;
-        }
-        .footer-p {
-            display: none !important;
-        }
+    .title-h3 {
+    display: none !important;
+  }
+  .footer-p {
+      display: none !important;
+  }
 
-        .gallery-container {
-          grid-template-columns: repeat(2, 1fr);
-        }
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-      }
+}
       
 /* -------------------------------- standard mobile phone iPad mini -------------------- */
 @media (max-width: 768px) {
@@ -493,7 +501,7 @@ html, body {
 
   /* Shrink the font size of the navigation links */
   .navbar-nav .nav-link {
-    font-size: 1.0rem; /* Reduce font size */
+    font-size: 1.0rem !important; /* Reduce font size */
     padding: 8px 10px; /* Adjust padding for smaller screens */
   }
 
@@ -502,7 +510,7 @@ html, body {
     padding-right: 10px; /* Adjust padding as needed */
   }
   .nav-section a {
-    font-size: 1.2rem;  /*Adjust the font size of the links */
+    font-size: 1.2rem !important;  /*Adjust the font size of the links */
   }
 
   .contact-div {
@@ -602,10 +610,10 @@ html, body {
 @media (max-width: 600px) {
 
   h1 {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
   h2 {
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
   h3 {
     font-size: 0.8rem;
@@ -620,7 +628,7 @@ html, body {
 
   p {
     font-size: 1rem;
-  }
+  } */
 
   /* Shrink the logo image */
   .navbar-brand img {
@@ -652,7 +660,7 @@ html, body {
     height: 2rem; /* Adjust the height of the image */
     margin-right: 5px;
   }
-}
+
 
   /* Shrink the font size of the navigation links */
   .navbar-nav .nav-link {
