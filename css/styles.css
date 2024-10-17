@@ -24,7 +24,27 @@ body {
   
   h1 {
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 5rem;
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 0.8rem;
+  }
+
+  h5 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 0.5rem;
   }
   
   p {
@@ -200,14 +220,14 @@ body {
 
 /* Increase font size in the navbar */
 .navbar-nav .nav-link {
-    font-size: 1.2rem !important; /* Adjust the font size as needed */
+    font-size: 1.2rem; /* Adjust the font size as needed */
     padding-right: 20px; /* Optional: Adds padding inside the link */
     color: black; /* Set text color to black */
   }
 
   /* Increase font size in the dropdown menu */
 .dropdown-menu .dropdown-item {
-  font-size: 1.1rem !important; /* Adjust the font size as needed */
+  font-size: 1.1rem; /* Adjust the font size as needed */
   padding: 8px 10px; /* Optional: Adds padding inside the dropdown item */
   color: black; /* Set text color to black */
 }
@@ -291,10 +311,10 @@ body {
   border-radius: 5px; /* Optional: Adds a slight border radius to the image */
 }
 
-.banner-content h1 {
+/* .banner-content h1 {
     font-size: 3rem;
     margin-bottom: 10px;
-    font-family: 'Roboto', sans-serif; /* Use the font you’ve included */
+    font-family: 'Roboto', sans-serif;
 }
 
 .banner-content p {
@@ -303,7 +323,7 @@ body {
     margin-bottom: 0;
     flex-wrap: wrap;
     justify-content: space-between;
-}
+} */
 
 .banner-left {
   display: flex;
@@ -410,7 +430,7 @@ body {
 @media (max-width: 1024px) {
 
   h1{
-    font-size: 10px;
+    font-size: 2rem;
   }
   h2 {
     font-size: 1.5rem;
@@ -418,9 +438,13 @@ body {
   h3 {
     font-size: 1rem;
   }
-  h4 {
+  /* h4 {
     font-size: 0.8rem;
   }
+  h5 {
+    font-size: 0.8rem;
+  } */
+
   .contact-col {
     padding:2rem 2rem;
   }
@@ -502,11 +526,12 @@ body {
 
 @media (max-width: 768px) {
 
+
   h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   h3 {
     font-size: 1rem;
@@ -514,7 +539,6 @@ body {
   h4 {
     font-size: 0.8rem;
   }
-
   .banner-section h2 {
     display: none;
   }
@@ -548,6 +572,9 @@ body {
   .banner-img {
     display: none;
 
+  }
+  .banner-section h1 {
+    padding-top: 10px;
   }
 
   .gallery-container {
@@ -615,7 +642,7 @@ body {
 
 @media (max-width: 600px) {
 
-  h1 {
+  /* h1 {
     font-size: 0.6rem;
   }
   h2 {
@@ -645,10 +672,7 @@ body {
     padding: 8px 10px; /* Adjust padding for dropdown items */
   }
 
-  /* Other styles */
-  .nav-section a {
-    font-size: 1.2rem;  /* Adjust the font size of the links */
-  }
+
 
   /* --------------------------------- Banner --------------------------------- */ 
 
