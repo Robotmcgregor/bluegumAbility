@@ -192,6 +192,12 @@ html, body {
       padding-bottom: 2rem;
       }
 
+      .logo-img {
+        height: 3rem;
+        width: auto;
+        margin-right: 10px;
+      }
+
        /* Increase font size in the navbar */
 .navbar-nav .nav-link {
     font-size: 1.4rem; /* Adjust the font size as needed */
@@ -219,7 +225,7 @@ html, body {
 }
 
 .navbar-brand img {
-  height: 40px;               /* Adjust the logo height */
+  height: 4rem;               /* Adjust the logo height */
   margin-right: 10px;         /* Space between logo and text */
   vertical-align: middle;     /* Aligns the logo vertically with the text */
 }
@@ -408,12 +414,45 @@ html, body {
         h2 {
           font-size: 1.5rem;
         }
+        h3 {
+          font-size: 1rem;
+        }
+        h4 {
+          font-size: 0.8rem;
+        }
         .contact-col {
           padding:2rem 2rem;
         }
         /* h3 {
           font-size: 1.5rem;
         } */
+
+                  /* Shrink the logo image */
+  .navbar-brand img {
+    height: 2rem; /* Reduce the height of the image */
+    margin-right: 5px; /* Adjust margin if needed */
+  }
+
+  /* Shrink the font size of the navigation links */
+  .navbar-nav .nav-link {
+    font-size: 1.0rem; /* Reduce font size */
+    padding: 8px 10px; /* Adjust padding for smaller screens */
+  }
+
+  /* Adjust padding between navigation items */
+  .navbar-nav .nav-item {
+    padding-right: 10px; /* Adjust padding as needed */
+  }
+  .nav-section a {
+    font-size: 1rem;  /*Adjust the font size of the links */
+  }
+  .dropdown-item {
+    font-size: 0.8rem;  /*Adjust the font size of the links */
+  }
+
+
+
+
          .title-h3 {
           display: none !important;
         }
@@ -427,141 +466,233 @@ html, body {
 
       }
       
-      /* -------------------------------- standard mobile phone iPad mini -------------------- */
-      @media (max-width: 768px) {
+/* -------------------------------- standard mobile phone iPad mini -------------------- */
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 0.8rem;
+  }
+
+  .banner-section h2 {
+    display: none;
+  }
+
+          /* Shrink the logo image */
+  .navbar-brand img {
+    height: 2rem; /* Reduce the height of the image */
+    margin-right: 5px; /* Adjust margin if needed */
+  }
+
+  /* Shrink the font size of the navigation links */
+  .navbar-nav .nav-link {
+    font-size: 1.0rem; /* Reduce font size */
+    padding: 8px 10px; /* Adjust padding for smaller screens */
+  }
+
+  /* Adjust padding between navigation items */
+  .navbar-nav .nav-item {
+    padding-right: 10px; /* Adjust padding as needed */
+  }
+  .nav-section a {
+    font-size: 1.2rem;  /*Adjust the font size of the links */
+  }
+
+  .contact-div {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .contact-col {
+    padding:1rem 1rem;
+    /* padding-right: 2rem; */
+  }
       
-          h2 {
-            font-size: 2rem;
-          }
-          h3 {
-            font-size: 1.5rem;
-          }
-          h4 {
-            font-size: 1rem;
-          }
-            .contact-div {
-              padding-left: 1rem;
-              padding-right: 1rem;
-            }
-            .contact-col {
-              padding:1rem 1rem;
-              /* padding-right: 2rem; */
-            }
-      
-          .title-h3 {
-            font-size: 2rem;
-          }
-          .social-media {
-            display: none !important;
-          }
+  .title-h3 {
+    font-size: 2rem;
+  }
+  .social-media {
+    display: none !important;
+  }
 
-        .footer-p {
-            display: none !important;
-        }
+  .footer-p {
+      display: none !important;
+  }
 
-        .banner-left, .banner-img {
-          text-align: center;
-          width: 100%;      /* Stacks content vertically on smaller screens */
-        }
+  .banner-left, .banner-img {
+    text-align: center;
+    width: 100%;      /* Stacks content vertically on smaller screens */
 
-        .gallery-container {
-          grid-template-columns: 1fr; /* 1 column for small screens */
-        }
+  }
 
-      }
+  .banner-img {
+    display: none;
 
-      /* --------------------------------- Pagination --------------------------------- */
+  }
 
-      .pagination {
-        display: flex;
-        justify-content: center;  /* Centers the pagination */
-        margin-top: 20px;         /* Adds spacing above the pagination */
-      }
-      
-      .page-item {
-        list-style: none;         /* Removes default list styling */
-      }
-      
-      .page-link {
-        text-decoration: none;
-        color: #007bff;           /* Bootstrap primary blue */
-        padding: 10px 15px;
-        border: 1px solid #007bff;/* Border around each page button */
-        border-radius: 2px;
-        margin: 0 5px;            /* Adds space between page buttons */
-        transition: background-color 0.3s ease;
-      }
-      
-      .page-link:hover {
-        background-color: #007bff;
-        color: white;
-      }
-      
-      /* Optional: Active state style */
-      .page-item.active .page-link {
-        background-color: #007bff;
-        color: white;
-        border-color: #007bff;
-      }
-      
+  .gallery-container {
+    grid-template-columns: 1fr; /* 1 column for small screens */
+  }
 
-      /* --------------------------------- Houses --------------------------------- */
-      .card {
-        margin-bottom: 20px; /* Adds spacing between cards */
-        margin-left: 10px;   /* Adds space to the left of each card */
-        margin-right: 10px;  /* Adds space to the right of each card */
-        margin-bottom: 20px; /* Adds spacing between cards */
-      }
-      
-      .houses-container {
-        text-align: center;
-        margin-bottom: 40px;
-      }
+  .banner-section h2 {
+    display: none;
+
+  }
+
+  /* --------------------------------- Pagination --------------------------------- */
+
+  .pagination {
+    display: flex;
+    justify-content: center;  /* Centers the pagination */
+    margin-top: 20px;         /* Adds spacing above the pagination */
+  }
+
+  .page-item {
+    list-style: none;         /* Removes default list styling */
+  }
+
+  .page-link {
+    text-decoration: none;
+    color: #007bff;           /* Bootstrap primary blue */
+    padding: 10px 15px;
+    border: 1px solid #007bff;/* Border around each page button */
+    border-radius: 2px;
+    margin: 0 5px;            /* Adds space between page buttons */
+    transition: background-color 0.3s ease;
+  }
+
+  .page-link:hover {
+    background-color: #007bff;
+    color: white;
+  }
+
+  /* Optional: Active state style */
+  .page-item.active .page-link {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
 
 
-        /* -------------------- Portrait mode phone and small tablets ---------------------- */
+  /* --------------------------------- Houses --------------------------------- */
+  .card {
+    margin-bottom: 20px; /* Adds spacing between cards */
+    margin-left: 10px;   /* Adds space to the left of each card */
+    margin-right: 10px;  /* Adds space to the right of each card */
+    margin-bottom: 20px; /* Adds spacing between cards */
+  }
+
+  .houses-container {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+}
 
 
-    @media (max-width: 600px) {
-          .card {
-            max-width: 86%;
-            margin-left: 7%;
-            text-align: center;
-      }
-      .profile-image {
-          border-radius: 100%;
-          height: 10rem;
-        }
-        
-        #profile-image {
-          margin: 7%
-        }
+/* -------------------- Portrait mode phone and small tablets ---------------------- */
 
 
-        .footer-p {
-            display: none !important;
-        }
+@media (max-width: 600px) {
 
-          .footer-r {
-            display: none !important;
-        }
+  h1 {
+    font-size: 0.8rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
 
-        .footer-i {
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
-            font-size: 1rem;
-        }
-        .banner-left, .banner-img {
-          text-align: center;
-          width: 100%;      /* Stacks content vertically on smaller screens */
-        }
+  h3 {
+    font-size: 1rem;
+  }
 
-        .gallery-container {
-          grid-template-columns: 1fr; /* 1 column for small screens */
-        }
+  p {
+    font-size: 1rem;
+  }
 
-      
-      }
+  /* Shrink the logo image */
+  .navbar-brand img {
+    height: 2rem; /* Reduce the height of the image */
+    margin-right: 5px; /* Adjust margin if needed */
+  }
+
+  /* Shrink the font size of the navigation links */
+  .navbar-nav .nav-link {
+    font-size: 0.8rem; /* Reduce font size */
+    padding: 8px 10px; /* Adjust padding for smaller screens */
+  }
+
+  /* Adjust padding between navigation items */
+  .navbar-nav .nav-item {
+    padding-right: 10px; /* Adjust padding as needed */
+  }
+
+  /* Adjust dropdown item font size */
+  .dropdown-menu .dropdown-item {
+    font-size: 0.8rem; /* Reduce the font size of dropdown items */
+    padding: 8px 10px; /* Adjust padding for dropdown items */
+  }
+
+  /* Other styles */
+  .nav-section a {
+    font-size: 1.2rem;  /* Adjust the font size of the links */
+  }
+
+  .banner-section h2 {
+    display: none;
+  }
+
+  .card {
+    max-width: 86%;
+    margin-left: 7%;
+    text-align: center;
+  }
+
+  .profile-image {
+    border-radius: 100%;
+    height: 10rem;
+  }
+
+  .profile-image {
+    margin: 7%;
+  }
+
+  .footer-p {
+    display: none !important;
+  }
+
+  .footer-r {
+    display: none !important;
+  }
+
+  .footer-i {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .banner-left, .banner-img {
+    text-align: center;
+    width: 100%; /* Stacks content vertically on smaller screens */
+  }
+
+  .gallery-container {
+    grid-template-columns: 1fr; /* 1 column for small screens */
+  }
+}
 
 
 
