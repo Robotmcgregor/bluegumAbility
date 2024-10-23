@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Verify reCAPTCHA response
-    $recaptchaSecret = "6Ldtn2kqAAAAAAYi777hgK3y1IxjIba88u2nUe-v";  // Use your Secret Key here
+    $recaptchaSecret = "6LeUpWkqAAAAAEwVk7TumwzKjy6Ynhwi7z7uUyE1";  // Use your Secret Key here
     $recaptchaResponse = $_POST['g-recaptcha-response'];
     $verifyUrl = "https://www.google.com/recaptcha/api/siteverify";
     
