@@ -76,6 +76,10 @@ affordable NDIS services
 high-quality disability care
 top-rated NDIS provider
 
+Recapture HTML: 6Ldfj2kqAAAAAC7hUzjx08cDr2793xcNR3awus1m
+
+Recapture Server side: 6Ldfj2kqAAAAAKEeOInRSUaVaPJWTbH7tajNnSqI
+
 ## SEO 
 ### older search engines
 <!-- Meta Keywords Index -->
@@ -83,3 +87,6 @@ top-rated NDIS provider
 
 <!-- Meta Keywords Gallery-->
 <meta name="keywords" content="photos, gallery, NDIS services photos, disability support photos, disability care photos, Bluegum Ability Services photos">
+
+<!-- Meta Keywords Contact-->
+<meta name="keywords" content="contact Bluegum, call Bluegum, contact local NDIS services provider, disability support provider contact, Bluegum Services contact">

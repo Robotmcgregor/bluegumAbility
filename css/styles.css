@@ -395,10 +395,10 @@ body {
   object-fit: cover; /* Ensures the image covers the square without stretching */
   display: block;
   margin-bottom: 10px;
+  box-shadow: #F7F9F9; /* Optional: Add a shadow effect */
 }
 
 .caption-container {
-  border: 2px solid grey;  /* Grey outline */
   padding: 10px;
   border-radius: 2px;
   background-color: #f9f9f9; /* Light grey background */
@@ -408,6 +408,62 @@ body {
   font-size: 1rem;
   color: #333;
   margin: 0;
+}
+
+  /* Photo Gallery Container */
+  .photo-gallery {
+    padding: 20px;
+    background-color: #f9f9f9; /* Optional: light background color for contrast */
+  }
+  
+  /* Gallery Items */
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 15px; /* Space between items */
+  }
+  
+  /* Individual Gallery Item */
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Rounded corners for gallery items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for depth */
+  }
+  
+  /* Gallery Image */
+  .gallery-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth zoom-in on hover */
+  }
+  
+  
+  /* Caption Container */
+  .caption-container {
+    position: absolute;
+    bottom: 0;
+    background: #fff; /* Semi-transparent black background */
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.7rem;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+    opacity: 0; /* Hidden by default */
+  }
+  
+  /* Show Caption on Hover */
+  .gallery-item:hover .caption-container {
+    opacity: 1; /* Show caption on hover */
+  }
+
+
+
+/* Zoom-in Effect on Hover */
+.gallery-item:hover img {
+  transform: scale(1.05); /* Slight zoom-in effect */
 }
 
 /* --------------------------------------- Houses -------------------------------------- */
@@ -466,7 +522,11 @@ body {
   }
 
   .navbar-brand img {
-    display: inline; /* Ensure logo stays visible */
+    display: inline;
+    max-height: 50px;
+    height: auto;
+    margin-right: 5px;
+
   }
 
   .navbar-brand {
@@ -478,12 +538,6 @@ body {
     display: flex;
     align-items: center;
   }
-
-  .navbar-brand img {
-    height: 2rem; /* Adjust the height of the image */
-    margin-right: 5px;
-  }
-
 
   /* Adjust padding between navigation items */
   .navbar-nav .nav-item {
@@ -585,6 +639,14 @@ body {
     display: none;
 
   }
+
+
+    /* --------------------------------- Cards --------------------------------- */
+    /* .card {
+      max-width: 30%;
+      margin-left: 7%;
+      text-align: center;
+    } */
 
   /* --------------------------------- Pagination --------------------------------- */
 
@@ -702,10 +764,14 @@ body {
 
   /* --------------------------------- Cards --------------------------------- */
   .card {
-    max-width: 86%;
+    max-width: 30%;
     margin-left: 7%;
     text-align: center;
   }
+
+
+  /* --------------------------------- Gallery --------------------------------- */
+
 
 
   /* --------------------------------- Footer --------------------------------- */
