@@ -34,7 +34,7 @@ body {
 
   h3 {
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   h4 {
@@ -479,6 +479,13 @@ body {
   background-color: white; /* Optional: Add a background to make the div stand out */
 }
 
+.recaptcha-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Adjust width as needed */
+  margin: 20px 0; /* Optional: Adds space around the reCAPTCHA */
+}
   /* ============================================== Devices ==============================================*/
 
 /* =================================== Small Laptop and landscape tablets ================================= */
@@ -492,7 +499,7 @@ body {
     font-size: 1.5rem;
   }
   h3 {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   /* h4 {
     font-size: 0.8rem;
@@ -585,10 +592,10 @@ body {
     font-size: 1.5rem;
   }
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   h4 {
     font-size: 0.8rem;
@@ -696,6 +703,22 @@ body {
     margin-bottom: 40px;
   }
 
+
+  .sil-content {
+    display: none !important;
+  }
+
+  .card-img-top {
+    height: 200px; /* Adjust the height of the card image */
+    object-fit: cover; /* Ensure the image covers the card */
+  }
+
+  .card {
+    max-width: 70%;
+    margin-left: 7%;
+    text-align: center;
+  }
+
 }
 
 
@@ -717,7 +740,7 @@ body {
     font-size: 1.2rem;
   }
 
-  h3 {
+  h {
     font-size: 1rem;
   }
 
@@ -762,13 +785,31 @@ body {
     padding-top: 10px;
   }
 
+
+
+
   /* --------------------------------- Cards --------------------------------- */
   .card {
-    max-width: 30%;
+    max-width: 90%;
     margin-left: 7%;
     text-align: center;
   }
 
+  .card-img-top {
+    height: 200px; /* Adjust the height of the card image */
+    object-fit: cover; /* Ensure the image covers the card */
+  }
+  .card-body {
+    padding: 1rem;
+  }
+  .card h5 {
+    font-size: 1rem;
+  }
+
+  .card h6,
+  .card p {
+    display: none;
+  }
 
   /* --------------------------------- Gallery --------------------------------- */
 

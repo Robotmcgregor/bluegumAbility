@@ -108,11 +108,16 @@
   </section>
   
 
-  <section class="sub-banner-section content-box off-white-section">
+  <section class="sub-banner-section content-box off-white-section sil-content">
     <div class="container-fluid-content off-white-section">
     <h2>What is Supported Independent Living or SIL</h2>
     <p>Supported Independent Living (SIL) is a type of support that helps individuals with disabilities live independently in shared or individual accommodations. It provides assistance with daily tasks and can be included as part of your NDIS plan to help you achieve greater independence and improve your quality of life.</p>
-    <h3>What makes Bluegum Ability SIL better than the rest?</h3>
+  </div>
+  </section>
+
+  <section class="sub-banner-section content-box off-white-section">
+    <div class="container-fluid-content off-white-section">
+   <h3>Why choose Bluegum?</h3>
     ,<p>At Bluegum, you'll become part of our extended family, where your safety and comfort are our top priorities. We ensure you never have to share a room or live with someone you’re not comfortable with, providing a supportive and personalised living experience.</p>
   </div>
   </section>
@@ -127,11 +132,11 @@
           <div class="row g-4">
             <div class="col-md-6 outline">
               <div class="card">
-                <img src="images\houses\jpeg-optimizer_palmerston_house_lounge.jpeg" class="card-img-top" alt="Palmerston SIL house lounge." loading="lazy" height="100">
+                <img src="images\houses\jpeg-optimizer_palmerston_house_lounge.jpeg" class="card-img-top" alt="Palmerston SIL house lounge." loading="lazy" height="300">
                 <div class="card-body">
                   <h5 class="card-title">Palmerston</h5>
                   <h6 class="card-subtitle mb-2 text-muted">Male</h6>
-                  <p class="card-text">One bedroom available in a two occupant house.</p>
+                  <p class="card-text">One bedroom available in a two occupant house, enquire now.</p>
                   <a href="contact.html" class="btn custom-btn">Find Out More</a>
                 </div>
               </div>
@@ -139,11 +144,11 @@
 
             <div class="col-md-6 outline">
               <div class="card">
-                <img src="images\houses\stuart_park_lounge.jpg" class="card-img-top" alt="Stuart Park SIL house lounge room" loading="lazy" height="100">
+                <img src="images\houses\stuart_park_lounge.jpg" class="card-img-top" alt="Stuart Park SIL house lounge room" loading="lazy" height="300">
                 <div class="card-body">
                   <h5 class="card-title">Stuart Park</h5>
                   <h6 class="card-subtitle mb-2 text-muted">Any gender</h6>
-                  <p class="card-text">Recently vacant, Enquire now.</p>
+                  <p class="card-text">Recently vacant, enquire now.</p>
                   <a href="contact.html" class="btn custom-btn">Find Out More</a>
 
 
@@ -156,7 +161,7 @@
           <div class="row g-4 mt-4">
             <div class="col-md-6">
               <div class="card">
-                    <img src="images\houses\jpeg-optimizer_tennent_creek_loungeroom.jpg" class="card-img-top" alt="Tennant Creek SIL house (one) lounge room." loading="lazy" height="100">
+                    <img src="images\houses\jpeg-optimizer_tennent_creek_loungeroom.jpg" class="card-img-top" alt="Tennant Creek SIL house (one) lounge room." loading="lazy" height="300">
                     <div class="card-body">
                       <h5 class="card-title">Tennant Creek</h5>
                       <h6 class="card-subtitle mb-2 text-muted">Female</h6>
@@ -168,11 +173,11 @@
 
             <div class="col-md-6">
               <div class="card">
-                <img src="images\no_photo_avalible.png" class="card-img-top" alt="Tennant Creek SIL house - no photo available." loading="lazy" height="100">
+                <img src="images\no_photo_avalible.png" class="card-img-top" alt="Tennant Creek SIL house - no photo available." loading="lazy" height="300">
                 <div class="card-body">
-                  <h5 class="card-title">Tennent Creek</h5>
+                  <h5 class="card-title">Tennant Creek</h5>
                   <h6 class="card-subtitle mb-2 text-muted">Female</h6>
-                  <p class="card-text">One bedroom available in a two occupant house.</p>
+                  <p class="card-text">One bedroom available in a two occupant house, enquire now.</p>
                   <a href="contact.html" class="btn custom-btn">Find Out More</a> 
                 </div>
               </div>
@@ -189,13 +194,13 @@
             <form action="send_sil.php" method="post">
           <!-- First Name Field -->
           <div class="form-group">
-            <label for="firstName">First Name: <span style="color: red;">*</span></label>
+            <label for="firstName"><span style="color: red;">*</span>  First Name:</label>
             <input type="text" class="form-control" id="firstName" name="first_name" placeholder="Enter your first name" required>
           </div>
 
           <!-- Last Name Field -->
           <div class="form-group">
-            <label for="lastName">Last Name: <span style="color: red;">*</span></label>
+            <label for="lastName"><span style="color: red;">*</span> Last Name:</label>
             <input type="text" class="form-control" id="lastName" name="last_name" placeholder="Enter your last name" required>
           </div>
 
@@ -234,20 +239,20 @@
 
           <!-- Email Field -->
           <div class="form-group">
-            <label for="email">Email:</label>
+            <label for="email"><span style="color: red;">*</span> Email:</label>
             <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" >
           </div>
 
           <!-- Phone Number Field -->
           <div class="form-group">
-            <label for="phone">Phone Number: <span style="color: red;">*</span></label>
+            <label for="phone">Phone Number:</label>
             <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
           </div>
 
 
               <!-- NDIS Plan Field -->
               <div class="form-group">
-                <label>Do you have an NDIS plan? <span style="color: red;">*</span></label><br>
+                <label><span style="color: red;">*</span> Do you have an NDIS plan?</label><br>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="ndisPlan" id="ndisYes" value="Yes" >
                   <label class="form-check-label" for="ndisYes">Yes</label>
@@ -261,9 +266,10 @@
                   <label class="form-check-label" for="ndisDontKnow">Don't Know</label>
                 </div>
               </div>
-
+              <div class="recaptcha-container">
         <!-- Google reCAPTCHA -->
         <div class="g-recaptcha" data-sitekey="6LeUpWkqAAAAAI08hp44pybAre0IqwuCyq-tyjd4"></div>
+        </div>
 
         <!-- Submit Button -->
         <button type="submit" class="btn custom-btn mt-3">Submit</button>
@@ -278,7 +284,7 @@
     </div>
   </section>
 
-  <nav aria-label="Page navigation example">
+  <!-- <nav aria-label="Page navigation example">
     <ul class="pagination">
       <li class="page-item"><a class="page-link" href="#">Previous</a></li>
       <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -286,7 +292,7 @@
       <li class="page-item"><a class="page-link" href="#">3</a></li>
       <li class="page-item"><a class="page-link" href="#">Next</a></li>
     </ul>
-  </nav>
+  </nav> -->
 
   <footer class="footer">
     <h3>Bluegum Ability Services</h3>
