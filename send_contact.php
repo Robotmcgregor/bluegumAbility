@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message = htmlspecialchars($_POST['message']);
 
     // Verify reCAPTCHA response
-    $recaptchaSecret = "6Ld_lmkqAAAAADrG6doqJAeXMwJImFhCySXwW21D";
+    $recaptchaSecret = "6LdYnmkqAAAAAL2gsQ7-K0l4oERbBsqognbyO-eJ";
     $recaptchaResponse = $_POST['g-recaptcha-response'];
     $verifyUrl = "https://www.google.com/recaptcha/api/siteverify";
     
