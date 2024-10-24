@@ -104,6 +104,7 @@
     </script>
 
 
+
 </head>
 
 <body>
@@ -112,15 +113,15 @@
   <div class="navigation">
     <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="index.html">
-        <img src="images\jpeg-optimizer_Brandmark_Standard_Transparent.png" alt="Bluegum Ability Logo", height="50">
-        Bluegum Ability Services
+        <img id="brand-logo" src="images/jpeg-optimizer_Brandmark_Standard_Transparent.png" alt="Bluegum Ability Logo" height="50">
+        <span id="brand-text">Bluegum Ability Services</span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <!-- Dropdown for Services -->
@@ -138,7 +139,7 @@
             <a class="nav-link" href="gallery.html">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="contact.html">Contact</span></a>
           </li>
         </ul>
       </div>
@@ -155,7 +156,7 @@
           <div class="col-md-8 banner-left">
             <h1>Bluegum Ability Services</h1>
             <h2>Contact Us</h2>
-            <h3>NDIS Registered Disability Service Provider</h3>
+            <h3>NDIS Registered</h3>
           </div>
         <div class="col-md-4">
           <!-- You can add any content here for the right cell -->
@@ -262,6 +263,65 @@
       <p class="footer-p">© Copyright 2024, Bluegum Ability Services</p>
     </div>
   </footer>
+
+ <!-- Auto highlight  nav bar !-->
+
+ <script>
+  // Get the current URL path (excluding domain)
+  var currentPath = window.location.pathname.split("/").pop();
+  if (currentPath === "") {
+    currentPath = "index.html"; // Set default for the homepage
+  }
+
+  // Get all navigation links
+  var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  var dropdownLinks = document.querySelectorAll(".dropdown-menu .dropdown-item");
+  var servicesDropdown = document.getElementById("navbarDropdown");
+
+  // Loop through links to check if the href matches the current path
+  let isActive = false;
+  navLinks.forEach(function(link) {
+    var linkPath = link.getAttribute("href");
+    if (linkPath === currentPath) {
+      link.classList.add("active");
+      isActive = true;
+    }
+  });
+
+  // Check if any dropdown items match the current path
+  dropdownLinks.forEach(function(link) {
+    var linkPath = link.getAttribute("href");
+    if (linkPath === currentPath) {
+      link.classList.add("active");
+      if (servicesDropdown) {
+        servicesDropdown.classList.add("active");
+      }
+      isActive = true;
+    }
+  });
+
+  // Optionally, highlight 'Home' if no other active links are found
+  if (!isActive) {
+    document.querySelector('a[href="index.html"]').classList.add("active");
+  }
+</script>
+
+<!-- JavaScript for changing brand name based on screen size -->
+<script>
+  // Function to update the brand name based on screen width
+  function updateBrandName() {
+    var brandTextElement = document.getElementById('brand-text');
+    if (window.innerWidth <= 600) {
+      brandTextElement.textContent = "Bluegum Ability"; // Shorten the name for smaller screens
+    } else {
+      brandTextElement.textContent = "Bluegum Ability Services"; // Full name for larger screens
+    }
+  }
+
+  // Run the function on load and on window resize
+  window.addEventListener('load', updateBrandName);
+  window.addEventListener('resize', updateBrandName);
+</script>
 
 </body>
 

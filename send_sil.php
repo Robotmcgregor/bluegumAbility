@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($responseData->success) {
         // Set the recipient email and subject
-        $to = "admin@bluegumability.com";  // Replace with your actual email address
+        $to = "blueg037@bluegumability.com";  // Replace with your actual email address
         $email_subject = "SIL Enquiry from $first_name $last_name";
         
         // Create the message body

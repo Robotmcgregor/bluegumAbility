@@ -1,6 +1,6 @@
 <?php
 // Define the recipient email address
-$to = "admin@bluegumability.com"; // Replace with your actual email address
+$to = "blueg037@bluegumability.com"; // Replace with your actual email address
 
 // Create the email subject and body
 $subject = "Test Email from PHP";
