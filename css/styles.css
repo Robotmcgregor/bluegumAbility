@@ -603,6 +603,37 @@ ul ul ul {
   height: auto !important; /* Adjust iframe height automatically */
   display: block;
 }
+
+
+/* --------------------------------------- Coordination -------------------------------------- */   
+
+
+.list-section h3, 
+.list-section p {
+  text-align: left; /* Aligns the headings and paragraphs to the left */
+  margin-left: 1rem; /* Adds a small left margin for spacing (optional) */
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+}
+
+.list-container ul {
+  list-style-type: disc; /* Disc bullets for better visibility */
+  padding-left: 20px;
+  text-align: left; /* Align text to the left within the list */
+  width: 90%; /* Set the width to a flexible percentage */
+  max-width: 800px; /* Restrict maximum width for large screens */
+  margin: 0 auto; /* Center align the list container */
+}
+
+.list-container li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem; /* Add spacing between each list item */
+}
+
+
   /* ============================================== Devices ==============================================*/
 
 /* =================================== Small Laptop and landscape tablets ================================= */
@@ -868,6 +899,24 @@ ul ul ul {
     max-width: 70%;
     margin-left: 7%;
     text-align: center;
+  }
+
+  /* -------------------- COS ------------------- */
+
+  .cos-section {
+    display: none;
+  }
+
+  .list-section h3 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .list-section p {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .list-section li {
+    font-size: 0.8rem; /* Adjust font size for smaller screens */
   }
 
 }
