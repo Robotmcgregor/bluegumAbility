@@ -998,9 +998,6 @@ ul ul ul {
     display: none;
   }
 
-  /* --------------------------------- Gallery --------------------------------- */
-
-
 
   /* --------------------------------- Footer --------------------------------- */
 
@@ -1018,10 +1015,7 @@ ul ul ul {
     font-size: 1rem;
   }
 
-  /* .banner-left, .banner-img {
-    text-align: center;
-    width: 100%; /* Stacks content vertically on smaller screens */
-    /*} */
+
 
   .gallery-container {
     grid-template-columns: 1fr; /* 1 column for small screens */
