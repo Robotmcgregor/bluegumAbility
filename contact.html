@@ -109,52 +109,46 @@
 
 <body>
 <!-- Navigation -->
-<section class="nav-section" id="title">
-  <div class="navigation">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="index.html">
-        <img id="brand-logo" src="images/jpeg-optimizer_Brandmark_Standard_Transparent.png" alt="Bluegum Ability Logo" height="50">
-        <span id="brand-text">Bluegum Ability Services</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <!-- Dropdown for Services -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Services
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="houses.html">Supported Independent Living (SIL)</a>
-              <a class="dropdown-item" href="coordination.html">Support Coordination (CoS)</a>
-              <!-- <a class="dropdown-item" href="https://bluegum-ability-services.com">Respite</a> -->
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</span></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+<nav class="navbar navbar-expand-md navbar-light bg-white">
+  <a class="navbar-brand" href="index.html">
+    <img id="brand-logo" src="images/jpeg-optimizer_Brandmark_Standard_Transparent.png" alt="Bluegum Ability Logo" height="50">
+    <span id="brand-text">Bluegum Ability</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="houses.html">Supported Independent Living (SIL)</a>
+          <a class="dropdown-item" href="coordination.html">Support Coordination (CoS)</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</span></a>
+      </li>
+    </ul>
   </div>
-</section>
+</nav>
 
 
   <!-- Banner Section -->
   <section class="banner-section">
     <div class = "banner-width">
       <div class="banner-content"> 
-        <div class="row">
+        <div class="row banner-row">
           <div class="col-md-8 banner-left">
-            <h1>Bluegum Ability Services</h1>
+            <h1>Bluegum Ability</h1>
             <h2>Contact Us</h2>
             <h3>NDIS Registered</h3>
           </div>
@@ -264,65 +258,9 @@
     </div>
   </footer>
 
- <!-- Auto highlight  nav bar !-->
 
- <script>
-  // Get the current URL path (excluding domain)
-  var currentPath = window.location.pathname.split("/").pop();
-  if (currentPath === "") {
-    currentPath = "index.html"; // Set default for the homepage
-  }
 
-  // Get all navigation links
-  var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-  var dropdownLinks = document.querySelectorAll(".dropdown-menu .dropdown-item");
-  var servicesDropdown = document.getElementById("navbarDropdown");
-
-  // Loop through links to check if the href matches the current path
-  let isActive = false;
-  navLinks.forEach(function(link) {
-    var linkPath = link.getAttribute("href");
-    if (linkPath === currentPath) {
-      link.classList.add("active");
-      isActive = true;
-    }
-  });
-
-  // Check if any dropdown items match the current path
-  dropdownLinks.forEach(function(link) {
-    var linkPath = link.getAttribute("href");
-    if (linkPath === currentPath) {
-      link.classList.add("active");
-      if (servicesDropdown) {
-        servicesDropdown.classList.add("active");
-      }
-      isActive = true;
-    }
-  });
-
-  // Optionally, highlight 'Home' if no other active links are found
-  if (!isActive) {
-    document.querySelector('a[href="index.html"]').classList.add("active");
-  }
-</script>
-
-<!-- JavaScript for changing brand name based on screen size -->
-<script>
-  // Function to update the brand name based on screen width
-  function updateBrandName() {
-    var brandTextElement = document.getElementById('brand-text');
-    if (window.innerWidth <= 600) {
-      brandTextElement.textContent = "Bluegum Ability"; // Shorten the name for smaller screens
-    } else {
-      brandTextElement.textContent = "Bluegum Ability Services"; // Full name for larger screens
-    }
-  }
-
-  // Run the function on load and on window resize
-  window.addEventListener('load', updateBrandName);
-  window.addEventListener('resize', updateBrandName);
-</script>
-
+  <script src="js\main.js"></script>
 </body>
 
 </html>

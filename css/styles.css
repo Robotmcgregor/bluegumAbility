@@ -1,11 +1,7 @@
-/* TEST / TEST / TEST */
-/* .outline{
-    outline: 1px solid red;
+/* div {
+  outline: 2px solid red;
+  background-color: #FFFFFF;
 } */
-
-
-
-
 /* ELEMENTS */
 
 html, body {
@@ -189,6 +185,18 @@ body {
 
   }
 
+  .container-fluid-content-cards {
+    padding: 2% 2% 1%;
+    flex: 1;
+    margin: 0 auto;   
+    width: 90%;  
+    text-align: center; 
+    /* border: 3px solid grey;  Adds a grey border */
+    border-radius: 5px;      /* Rounds the corners */
+    padding-top: 20px; /* Padding when cards are in normal layout */
+    padding-bottom: 20px;
+
+  }
 
 .white-section {
   background-color: #FFFFFF;
@@ -241,13 +249,10 @@ ul ul ul {
   
   }
 
-.navigation {
+/* .navigation {
     padding-bottom: 2px;
-  }
+  } */
 
-.content-box {
-  padding-bottom: 2rem;
-  }
 
 .logo-img {
   height: 3rem;
@@ -255,98 +260,104 @@ ul ul ul {
   margin-right: 10px;
   }
 
-/* Increase font size in the navbar */
 .navbar-nav .nav-link {
-  font-size: 1.2rem; /* Adjust the font size as needed */
-  padding-right: 20px; /* Optional: Adds padding inside the link */
-  color: black; /* Set text color to black */
+  font-size: 1rem;
+  padding-right: 20px;
+  color: black;
 }
+
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #0D1F30;
+  color: white !important;
+  text-decoration: none;
+}
+
+.dropdown-menu .dropdown-item {
+  font-size: 1rem; 
+  /* padding: 10px;  */
+  color: black; 
+}
+
+
+.dropdown-item.active:hover,
+.dropdown-item:active:hover {
+  background-color: #0D1F30;
+  color: white; 
+}
+
+/* Add padding between navigation items */
+.navbar-nav .nav-item {
+  padding-right: 2px; 
+}
+
+.navbar-brand img {
+  height: 4rem;              
+  margin-right: 10px;         
+  vertical-align: middle;    
+}
+
+.navbar-brand {
+  font-size: 1.4rem;         
+  /* font-weight: bold;          */
+  vertical-align: middle;    
+  display: inline-flex;       
+  align-items: center;        
+  /* padding-bottom: 5px;        */
+}
+
 
 /* Set styles for active dropdown items */
 .dropdown-item.active,
 .dropdown-item:active {
   background-color: #0D1F30; /* Your desired active background color */
-  color: white !important; /* Set active text color to white */
+  color: white; /* Set active text color to white */
   text-decoration: none; /* Remove underline if present */
 }
 
 /* Set styles for inactive dropdown items */
 .dropdown-menu .dropdown-item {
   font-size: 1.1rem; /* Adjust the font size as needed */
-  padding: 8px 10px; /* Optional: Adds padding inside the dropdown item */
+  padding: 8px 10px;  /*Optional: Adds padding inside the dropdown item */
   color: black; /* Default text color for inactive items */
 }
 
 /* Ensure color remains white when hovering over active items */
 .dropdown-item.active:hover,
 .dropdown-item:active:hover {
-  background-color: #0D1F30;
   color: white; /* Maintain white text color on hover */
 }
 
-/* Add padding between navigation items */
-.navbar-nav .nav-item {
-  padding-right: 20px; /* Adjust the spacing as needed */
-}
-
-/* Highlight the background on hover */
-.navbar-nav .nav-link:hover {
-  background-color: #160f331e; /* Light gray background on hover */
-  border-radius: 2px; /* Optional: adds rounded corners */
-  transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-/* Active item color */
-.navbar-nav .nav-link.active {
-  background-color: #0D1F30; /* Example active background color */
-  color: white !important; /* Active item text color */
-  border-radius: 2px; /* Optional: adds rounded corners */
-}
-
-
-.navbar-brand img {
-  height: 4rem;               /* Adjust the logo height */
-  margin-right: 10px;         /* Space between logo and text */
-  vertical-align: middle;     /* Aligns the logo vertically with the text */
-}
-
-.navbar-brand {
-  font-size: 1.8rem;          /* Font size for the text */
-  font-weight: bold;          /* Optional: bold font */
-  vertical-align: middle;     /* Aligns the text vertically */
-  display: inline-flex;       /* Ensure proper alignment */
-  align-items: center;        /* Align text and logo in the center vertically */
-  padding-bottom: 5px;        /* Adjusts the text down slightly */
-}
 
 .custom-btn {
-  background-color:  #F28C28;  /* Custom background color */
-  color: white;               /* Custom text color */
-  border: none;               /* Remove border */
-  padding: 10px 20px;         /* Add padding for button look */
-  text-decoration: none;      /* Remove underline from the link */
-  border-radius: 2px;         /* Optional: Add rounded corners */
-  display: inline-block;      /* Make it behave like a button */
+  background-color:  #F28C28;  
+  color: white;               
+  border: none;              
+  padding: 10px 20px;       
+  text-decoration: none;     
+  border-radius: 2px;       
+  display: inline-block;     
 }
 
 .custom-btn:hover {
-  background-color: #0D1F30;  /* Darker background on hover */
-  color:  #FFFFFF;               /* Ensure text remains white on hover */
+  background-color: #0D1F30;  
+  color:  #FFFFFF;              
 }
 
 .custom-btn-alt {
-  background-color: #0D1F30;  /* Custom background color */
-  color: white;               /* Custom text color */
-  border: none;               /* Remove border */
-  padding: 10px 20px;         /* Add padding for button look */
-  text-decoration: none;      /* Remove underline from the link */
-  border-radius: 2px;         /* Optional: Add rounded corners */
-  display: inline-block;      /* Make it behave like a button */
+  background-color: #0D1F30;  
+  color: white;              
+  border: none;             
+  padding: 10px 20px;        
+  text-decoration: none;     
+  border-radius: 2px;        
+  display: inline-block;     
 }
 
 .custom-btn-alt:hover {
-  background-color:  #F28C28;  /* Darker background on hover */
-  color:  #FFFFFF;               /* Ensure text remains white on hover */
+  background-color:  #F28C28; 
+  color:  #FFFFFF;              
 }
 
 /* --------------------------------------- Banner -------------------------------------- */
@@ -379,38 +390,21 @@ ul ul ul {
   border-radius: 5px; /* Optional: Adds a slight border radius to the image */
 }
 
-/* .banner-content h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
-}
 
-.banner-content p {
-    font-size: 1.5rem;
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 0;
-    flex-wrap: wrap;
-    justify-content: space-between;
-} */
 
 .banner-left {
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* Vertically centers the text */
-  align-items: center;       /* Horizontally centers the text */
-  text-align: center;        /* Ensures the text itself is centered */
+  justify-content: center; 
+  align-items: center;      
+  text-align: center;    
 }
-/* .left-cell {
-  padding: 2rem;
-} */
- /* .banner-left {
-    padding: 120px;
 
-} */
+.banner-section .col-md-8 {
+  width: 80%; /* Increase the width of the text area */
+  margin: 0 auto; /* Center the text container */
+}
 
-/* .banner-width {
-    width: 100%;
-} */
 /* --------------------------------------- Footer -------------------------------------- */
 
  /* Footer Section */
@@ -445,12 +439,15 @@ ul ul ul {
   height: auto;
 }
 
-.footer-left, .footer-right {
-  outline: 2px dashed red; /* Adds a dashed red outline to the divs */
-}
-
 
   /*----------------- Cards ----------------- */
+
+  .card-container-inline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distributes cards evenly */
+    gap: 20px; /* Adds space between the cards */
+  }
 
   .card-container {
     display: flex;
@@ -469,6 +466,8 @@ ul ul ul {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  /* padding: 20px;  */
+  margin: 10px 10px;
 }
 
 .card img {
@@ -590,12 +589,22 @@ ul ul ul {
   background-color: white; /* Optional: Add a background to make the div stand out */
 }
 
+
 .recaptcha-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Adjust width as needed */
-  margin: 20px 0; /* Optional: Adds space around the reCAPTCHA */
+  transform: scale(0.75); /* Adjust the scale value as needed (e.g., 0.5 for 50%, 0.8 for 80%) */
+  transform-origin: center; /* Aligns the reCAPTCHA to the center */
+  -webkit-transform: scale(0.75);
+  -webkit-transform-origin: center;
+  margin: 0 auto; /* Ensure the container is centered horizontally */
+  width: 100%; /* Ensure the container takes up the full width */
+}
+
+.recaptcha-container iframe {
+  height: auto !important; /* Adjust iframe height automatically */
+  display: block;
 }
   /* ============================================== Devices ==============================================*/
 
@@ -692,6 +701,9 @@ ul ul ul {
     grid-template-columns: repeat(2, 1fr);
   }
 
+
+
+
 }
       
 /* ======================================== standard mobile phone iPad mini ======================================= */
@@ -713,6 +725,22 @@ ul ul ul {
   }
   .banner-section h2 {
     display: none;
+  } */
+  
+  .banner-section {
+    background-size: cover;
+    background-position: center;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+
+  .col-md-4 {
+    display: none;
   }
 
   .contact-div {
@@ -721,7 +749,7 @@ ul ul ul {
   }
   .contact-col {
     padding:1rem 1rem;
-    /* padding-right: 2rem; */
+    padding-right: 2rem;
   }
       
   .title-h3 {
@@ -735,11 +763,12 @@ ul ul ul {
       display: none !important;
   }
 
-  .banner-left, .banner-img {
+  
+  /* .banner-left, .banner-img {
     text-align: center;
-    width: 100%;      /* Stacks content vertically on smaller screens */
+    width: 100%;
 
-  }
+  } */
 
   .banner-img {
     display: none;
@@ -761,14 +790,18 @@ ul ul ul {
 
     /* --------------------------------- Cards --------------------------------- */
 
-      .card-container {
-          flex-direction: column;
-          gap: 15px;
-      }
+  .card-container-inline {
+    justify-content: center; /* Centers cards on smaller screens */
+  }
+
+  .card-container {
+      flex-direction: column;
+      gap: 15px;
+  }
   
-      .card {
-          width: 100%;
-      }
+  .card {
+      width: 100%;
+  }
   
 
   /* --------------------------------- Pagination --------------------------------- */
@@ -845,26 +878,6 @@ ul ul ul {
 
 @media (max-width: 600px) {
 
-  /* h1 {
-    font-size: 0.6rem;
-  }
-  h2 {
-    font-size: 0.6rem;
-  }
-  h3 {
-    font-size: 0.8rem;
-  }
-  h4 {
-    font-size: 1.2rem;
-  }
-
-  h {
-    font-size: 1rem;
-  }
-
-  p {
-    font-size: 1rem;
-  } */
 
   /* ----------------Navbar---------------- */
 

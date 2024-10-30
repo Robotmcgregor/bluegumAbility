@@ -56,58 +56,45 @@
   <!-- FontAwsome -->
   <script src="https://kit.fontawesome.com/e9eb3a54c1.js" crossorigin="anonymous"></script>
 
-
-    <!-- Java Script -->
-    <script>
-      //Get the button:
-      mybutton = document.getElementById("myBtn");
-
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {
-        scrollFunction()
-      };
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-      }
-    </script>
-
-    <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-      (function() {
-        'use strict';
-        window.addEventListener('load', function() {
-          // Fetch all the forms we want to apply custom Bootstrap validation styles to
-          var forms = document.getElementsByClassName('needs-validation');
-          // Loop over them and prevent submission
-          var validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
-              if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
-              form.classList.add('was-validated');
-            }, false);
-          });
-        }, false);
-      })();
-    </script>
-
-
 </head>
 
 <body>
-<!-- Navigation -->
+
+  <nav class="navbar navbar-expand-md navbar-light bg-white">
+    <a class="navbar-brand" href="index.html">
+      <img id="brand-logo" src="images/jpeg-optimizer_Brandmark_Standard_Transparent.png" alt="Bluegum Ability Logo" height="50">
+      <span id="brand-text">Bluegum Ability</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="houses.html">Supported Independent Living (SIL)</a>
+            <a class="dropdown-item" href="coordination.html">Support Coordination (CoS)</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+ 
+<!-- Navigation 
 <section class="nav-section" id="title">
   <div class="navigation">
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -123,7 +110,7 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
-          <!-- Dropdown for Services -->
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Services
@@ -131,7 +118,7 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="houses.html">Supported Independent Living (SIL)</a>
               <a class="dropdown-item" href="coordination.html">Support Coordination (CoS)</a>
-              <!-- <a class="dropdown-item" href="https://bluegum-ability-services.com">Respite</a> -->
+
             </div>
           </li>
           <li class="nav-item">
@@ -144,7 +131,7 @@
       </div>
     </nav>
   </div>
-</section>
+</section> -->
 
 
   <!-- Banner Section -->
@@ -173,6 +160,44 @@
 </section>
 
 <section>
+  <div class="d-flex flex-wrap justify-content-center container-fluid-content-cards sub-banner-section">
+    <div class="card" style="width: 15rem;">
+      <img src="images/gallery/cos.webp" class="card-img-top" alt="Representation of Support Coordination">
+      <div class="card-body">
+        <h5 class="card-title">Support Coordination</h5>
+        <p class="card-text">We provide amazing support coordination services. We make sure our clients get great NDIS plans, to ensure that you meet your full potential.</p>
+        <a href="contact.html" class="btn custom-btn-alt">Contact us</a>
+      </div>
+    </div>
+    <div class="card" style="width: 15rem;">
+      <img src="images/gallery/independant_living.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Supported Independent Living</h5>
+        <p class="card-text">We provide some of the best houses for our clients. This is your home, and we will always do our best to make sure it feels like home.</p>
+        <a href="houses.html" class="btn custom-btn-alt">Find Out More</a>
+      </div>
+    </div>
+    <div class="card" style="width: 15rem;">
+      <img src="images/gallery/respite.webp" class="card-img-top" alt="Representation of respite.">
+      <div class="card-body">
+        <h5 class="card-title">Short Term Respite</h5>
+        <p class="card-text">We will organise everything, and make sure you get to go shopping, visit family, and see the sites. This is your respite, and it should feel like a holiday.</p>
+        <a href="contact.html" class="btn custom-btn-alt">Contact us</a>
+      </div>
+    </div>
+    <div class="card" style="width: 15rem;">
+      <img src="images/gallery/community_access.webp" class="card-img-top" alt="Representation of community access">
+      <div class="card-body">
+        <h5 class="card-title">Community Access</h5>
+        <p class="card-text">We have great, warm, and friendly support workers to help you get to your appointments, shopping, and community events. We will always show up, and get you where you want to go.</p>
+        <a href="contact.html" class="btn custom-btn-alt">Contact us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 
+<section>
   <div class="card-container">
   <div class="card" style="width: 18rem;">
     <img src="images\gallery\cos.webp" class="card-img-top" alt="Representation of Support Coordination">
@@ -192,7 +217,7 @@
   </div>
 
   <div class="card" style="width: 18rem;">
-    <img src=images\gallery\respite.webp class="card-img-top" alt="Representation of respite.">
+    <img src="images\gallery\respite.webp" class="card-img-top" alt="Representation of respite.">
     <div class="card-body">
       <h5 class="card-title">Short Term Respite</h5>
       <p class="card-text">We will organise everything, and make sure you get to go shopping, visit family and see the sites. This is your respite, and it should feel like a holiday.</p>
@@ -201,7 +226,7 @@
   </div>
 
   <div class="card" style="width: 18rem;">
-    <img src=images\gallery\community_access.webp class="card-img-top" alt="Representation of community access">
+    <img src="images\gallery\community_access.webp" class="card-img-top" alt="Representation of community access">
     <div class="card-body">
       <h5 class="card-title">Community Access</h5>
       <p class="card-text">We have great, warm and friendly support workers to help you get to your appointments, shopping, and community events. We will always show up, and get you where you want to go.</p>
@@ -209,7 +234,7 @@
     </div>
   </div>
 </div>
-</section>
+</section> -->
 
 
 
@@ -247,91 +272,7 @@
     </div>
   </footer>
 
-  <!-- <footer class="footer-section">
-    <div class="footer-left">
-      <h3>Bluegum Ability Services</h3>
-      <p class="footer-r">Registered NDIS provider</p>
-      <div class="social-links">
-        <a href="https://www.facebook.com/people/Bluegum-Ability-Services/61551921666228/" target="_blank" aria-label="Facebook">
-          <i class="footer-i fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.instagram.com/bluegumability/" target="_blank" aria-label="Instagram">
-          <i class="footer-i fab fa-instagram"></i>
-        </a>
-        <a href="mailto:admin@bluegumability.com" aria-label="Email">
-          <i class="footer-i fas fa-envelope"></i>
-        </a>
-      </div>
-      <p class="footer-p">© Copyright 2024, Bluegum Ability Services</p>
-    </div>
-  
-    <div class="footer-right">
-      <a href="https://hostpapa.verifytrustseal.com/verification/
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb21haW5JZCI6IjIxMTU5MSIsInRoZW1lIjoiZGFyayIsImhvc3RuYW1lIjoiZGFzaGJvYXJkLnByb3RlY3Rpb25wb3dlci5jb20iLCJsYW5ndWFnZSI6ImVuIiwiaWF0IjoxNzMwMDcxNTY5fQ.nHh-31LTtVLPwZVZrhxj5PYVmmvtJbawklvll-uJfe8?clang=en" target="_blank"><img src="https://cww.verifytrustseal.com/seal/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkb21haW5JZCI6IjIxMTU5MSIsInRoZW1lIjoiZGFyayIsImhvc3RuYW1lIjoiZGFzaGJvYXJkLnByb3RlY3Rpb25wb3dlci5jb20iLCJsYW5ndWFnZSI6ImVuIiwiaWF0IjoxNzMwMDcxNTY5fQ.nHh-31LTtVLPwZVZrhxj5PYVmmvtJbawklvll-uJfe8?clang=en" alt="cww trust seal" class="security-logo"></a>
-
-    </div>
-  </footer> -->
-
-
- <!-- Auto highlight  nav bar !-->
-
- <script>
-  // Get the current URL path (excluding domain)
-  var currentPath = window.location.pathname.split("/").pop();
-  if (currentPath === "") {
-    currentPath = "index.html"; // Set default for the homepage
-  }
-
-  // Get all navigation links
-  var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-  var dropdownLinks = document.querySelectorAll(".dropdown-menu .dropdown-item");
-  var servicesDropdown = document.getElementById("navbarDropdown");
-
-  // Loop through links to check if the href matches the current path
-  let isActive = false;
-  navLinks.forEach(function(link) {
-    var linkPath = link.getAttribute("href");
-    if (linkPath === currentPath) {
-      link.classList.add("active");
-      isActive = true;
-    }
-  });
-
-  // Check if any dropdown items match the current path
-  dropdownLinks.forEach(function(link) {
-    var linkPath = link.getAttribute("href");
-    if (linkPath === currentPath) {
-      link.classList.add("active");
-      if (servicesDropdown) {
-        servicesDropdown.classList.add("active");
-      }
-      isActive = true;
-    }
-  });
-
-  // Optionally, highlight 'Home' if no other active links are found
-  if (!isActive) {
-    document.querySelector('a[href="index.html"]').classList.add("active");
-  }
-</script>
-
-<!-- JavaScript for changing brand name based on screen size -->
-<script>
-  // Function to update the brand name based on screen width
-  function updateBrandName() {
-    var brandTextElement = document.getElementById('brand-text');
-    if (window.innerWidth <= 600) {
-      brandTextElement.textContent = "Bluegum Ability"; // Shorten the name for smaller screens
-    } else {
-      brandTextElement.textContent = "Bluegum Ability Services"; // Full name for larger screens
-    }
-  }
-
-  // Run the function on load and on window resize
-  window.addEventListener('load', updateBrandName);
-  window.addEventListener('resize', updateBrandName);
-</script>
-
+<script src="js\main.js"></script>
 </body>
 
 </html>
