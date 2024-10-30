@@ -68,7 +68,6 @@ body {
   }
   
 
-
    /* CLASS */
 
 .form-check-padding {
@@ -725,12 +724,27 @@ ul ul ul {
   }
   .banner-section h2 {
     display: none;
-  } */
+  }
   
+
+.banner-left h1, 
+.banner-left h2, 
+.banner-left h3 {
+  margin: 0.5rem 0; /* Increase vertical spacing between headings */
+  width: 100%; /* Allow headings to use full width */
+  line-height: 1.5; /* Adjust line-height for more spacing between lines */
+}
+
+/* Optionally, adjust padding for the .banner-left container */
+.banner-left {
+  padding: 1rem 2rem; /* Add padding inside the text container */
+}
+
   .banner-section {
     background-size: cover;
     background-position: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -738,6 +752,11 @@ ul ul ul {
     color: white;
     position: relative;
   }
+
+  /* .col-md-8 {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  } */
 
   .col-md-4 {
     display: none;
@@ -770,22 +789,22 @@ ul ul ul {
 
   } */
 
-  .banner-img {
+  /* .banner-img {
     display: none;
 
-  }
-  .banner-section h1 {
+  } */
+  /* .banner-section h1 {
     padding-top: 10px;
-  }
+  } */
 
   .gallery-container {
     grid-template-columns: 1fr; /* 1 column for small screens */
   }
 
-  .banner-section h2 {
+  /* .banner-section h2 {
     display: none;
 
-  }
+  } */
 
 
     /* --------------------------------- Cards --------------------------------- */
@@ -892,7 +911,7 @@ ul ul ul {
 
   /* --------------------------------- Banner --------------------------------- */ 
 
-  .banner-section {
+  /* .banner-section {
     background-size: cover;
     background-position: center;
     height: 40px;
@@ -914,7 +933,7 @@ ul ul ul {
 
   .banner-section h3 {
     padding-top: 10px;
-  }
+  } */
 
 
 
@@ -965,10 +984,10 @@ ul ul ul {
     font-size: 1rem;
   }
 
-  .banner-left, .banner-img {
+  /* .banner-left, .banner-img {
     text-align: center;
     width: 100%; /* Stacks content vertically on smaller screens */
-  }
+    /*} */
 
   .gallery-container {
     grid-template-columns: 1fr; /* 1 column for small screens */
