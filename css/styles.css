@@ -956,7 +956,7 @@ ul ul ul {
     align-items: center; /* Center elements horizontally */
   }
 
-  .banner-section .col-md-8,
+  .banner-section .col-md-8
   {
     width: 100%; /* Make each column take full width */
     text-align: center; /* Center-align text within each column */
