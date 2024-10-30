@@ -740,12 +740,6 @@ ul ul ul {
     height: 100%;
   }
 
-  /* Add padding to the banner to reduce compactness */
-  /* .banner-section {
-    padding: 1rem;
-  } */
-
-
 
   .contact-div {
     padding-left: 1rem;
@@ -768,28 +762,11 @@ ul ul ul {
   }
 
   
-  /* .banner-left, .banner-img {
-    text-align: center;
-    width: 100%;
 
-  } */
-
-  /* .banner-img {
-    display: none;
-
-  } */
-  /* .banner-section h1 {
-    padding-top: 10px;
-  } */
 
   .gallery-container {
     grid-template-columns: 1fr; /* 1 column for small screens */
   }
-
-  /* .banner-section h2 {
-    display: none;
-
-  } */
 
 
     /* --------------------------------- Cards --------------------------------- */
@@ -807,6 +784,25 @@ ul ul ul {
       width: 100%;
   }
   
+  /* Adjust the house cards */
+
+  .houses-container .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .houses-container .col-md-6 {
+    width: 100%; /* Make the columns take full width on smaller screens */
+    display: flex;
+    justify-content: center;
+  }
+
+  .houses-container .card {
+    width: 100%; /* Ensure cards take full width of the container */
+    max-width: 500px; /* Optional: Set a max-width to limit the card size */
+    margin-bottom: 20px; /* Add some spacing between stacked cards */
+  }
 
   /* --------------------------------- Pagination --------------------------------- */
 
