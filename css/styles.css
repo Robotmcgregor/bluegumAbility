@@ -248,11 +248,6 @@ ul ul ul {
   
   }
 
-/* .navigation {
-    padding-bottom: 2px;
-  } */
-
-
 .logo-img {
   height: 3rem;
   width: auto;
@@ -265,6 +260,10 @@ ul ul ul {
   color: black;
 }
 
+.current-page {
+  color: #ffffff !important; /* Change text color */
+  background-color: #0D1F30 !important; /* Change background color */
+}
 
 .dropdown-item.active,
 .dropdown-item:active {
@@ -278,7 +277,6 @@ ul ul ul {
   /* padding: 10px;  */
   color: black; 
 }
-
 
 .dropdown-item.active:hover,
 .dropdown-item:active:hover {
@@ -299,11 +297,24 @@ ul ul ul {
 
 .navbar-brand {
   font-size: 1.4rem;         
-  /* font-weight: bold;          */
   vertical-align: middle;    
   display: inline-flex;       
   align-items: center;        
-  /* padding-bottom: 5px;        */
+}
+
+/* ---------- Hover ---------- */
+
+.nav-link,
+.dropdown-item,
+.current-page {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover,
+.dropdown-item:hover,
+.current-page:hover {
+  color: black !important; /* Change hover text color */
+  background-color: #7d7e7e !important; /* Change hover background color */
 }
 
 
@@ -327,6 +338,8 @@ ul ul ul {
 .dropdown-item:active:hover {
   color: white; /* Maintain white text color on hover */
 }
+
+/* --------------------------------------- Buttons -------------------------------------- */
 
 
 .custom-btn {
@@ -649,12 +662,7 @@ ul ul ul {
   h3 {
     font-size: 1.3rem;
   }
-  /* h4 {
-    font-size: 0.8rem;
-  }
-  h5 {
-    font-size: 0.8rem;
-  } */
+
 
   .contact-col {
     padding:2rem 2rem;
