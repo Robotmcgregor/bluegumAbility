@@ -366,14 +366,12 @@ ul ul ul {
     background-color: #0D1F30;
     background-size: cover;
     background-position: center;
-    /* height: 300px; */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
     position: relative;
-
 }
 
 .banner-content {
@@ -386,7 +384,7 @@ ul ul ul {
   max-width: 100%;    /* Ensures the image fits within the container */
   height: auto;       /* Maintains the aspect ratio */
   display: block;     /* Ensures proper rendering of the image */
-  border-radius: 5px; /* Optional: Adds a slight border radius to the image */
+  border-radius: 0px; /* Optional: Adds a slight border radius to the image */
 }
 
 
@@ -722,45 +720,32 @@ ul ul ul {
   h4 {
     font-size: 0.8rem;
   }
-  .banner-section h2 {
+  .banner-section h2,
+  .banner-section h3 {
     display: none;
   }
   
-
-.banner-left h1, 
-.banner-left h2, 
-.banner-left h3 {
-  margin: 0.5rem 0; /* Increase vertical spacing between headings */
-  width: 100%; /* Allow headings to use full width */
-  line-height: 1.5; /* Adjust line-height for more spacing between lines */
-}
-
-/* Optionally, adjust padding for the .banner-left container */
-.banner-left {
-  padding: 1rem 2rem; /* Add padding inside the text container */
-}
-
-  .banner-section {
-    background-size: cover;
-    background-position: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    position: relative;
+  /* Make the columns stay inline by reducing the width percentages */
+  .banner-left {
+    flex: 1 1 60%; /* Take up 60% of the width */
+    text-align: center; /* Keep text aligned to center */
+  }
+  
+  .col-md-4 {
+    flex: 1 1 40%; /* Take up 40% of the width */
   }
 
-  /* .col-md-8 {
-    padding-right: 4rem;
-    padding-left: 4rem;
+  .banner-img {
+    width: auto; /* Make the image slightly smaller */
+    height: 100%;
+  }
+
+  /* Add padding to the banner to reduce compactness */
+  /* .banner-section {
+    padding: 1rem;
   } */
 
-  .col-md-4 {
-    display: none;
-  }
+
 
   .contact-div {
     padding-left: 1rem;
@@ -911,31 +896,27 @@ ul ul ul {
 
   /* --------------------------------- Banner --------------------------------- */ 
 
-  /* .banner-section {
-    background-size: cover;
-    background-position: center;
-    height: 40px;
+
+  .banner-section .row {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    position: relative;
-  }
-  
-  .banner-section h1 {
-    display: none;
-  }
-  
-  .banner-section h2 {
-    display: none;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
   }
 
-  .banner-section h3 {
-    padding-top: 10px;
-  } */
+  .banner-section .col-md-8,
+  {
+    width: 100%; /* Make each column take full width */
+    text-align: center; /* Center-align text within each column */
+  }
 
+  .banner-section .col-md-8 {
+    padding-bottom: 15px; /* Add some spacing between the text and image */
+    padding-top: 15px;
+  }
 
+.banner-section .col-md-4 {
+  display: none; /* Hide the image container on smaller screens */
+}
 
 
   /* --------------------------------- Cards --------------------------------- */
