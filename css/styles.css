@@ -173,6 +173,11 @@ body {
       background-color: #0D1F30; 
   }
 
+  .coloured-section h3, 
+.coloured-section p, .coloured-section li {
+    color: white;
+}
+
   .container-fluid-content {
     padding: 4% 4% 1%;
     flex: 1;
@@ -181,7 +186,7 @@ body {
     text-align: center; 
     /* border: 3px solid grey;  Adds a grey border */
     border-radius: 5px;      /* Rounds the corners */
-    background-color: white; /* Optional: Add a background to make the div stand out */
+
   }
 
 
@@ -195,6 +200,38 @@ body {
 
  }
 
+
+ .dropdown-item.active,
+.dropdown-item:active {
+  background-color: #0D1F30;
+  color: white;
+}
+
+ /* --------------------------------------- lists -------------------------------------- */
+
+ /* Reset list styling */
+ul {
+  list-style-type: disc; /* Choose a disc, or other styles like circle/square */
+  padding-left: 150px; /* Control the indentation of top-level list items */
+}
+
+/* Apply specific padding to nested lists */
+ul ul {
+  list-style-type: circle; /* Use a different bullet style for nested lists */
+  padding-left: 20px; /* Adjust padding for nested list indentation */
+}
+
+/* Add optional styling for better spacing */
+ul li {
+  margin: 15px 0; /* Adjust vertical spacing between list items */
+  text-align: left; /* Align heading to the left */
+}
+
+/* Optional: Styling for more nested lists if needed */
+ul ul ul {
+  list-style-type: square; /* Change bullet style for deeper nesting levels */
+  padding-left: 20px;
+}
 
 /* --------------------------------------- Navbar -------------------------------------- */
 
@@ -225,11 +262,26 @@ body {
   color: black; /* Set text color to black */
 }
 
-/* Increase font size in the dropdown menu */
+/* Set styles for active dropdown items */
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #0D1F30; /* Your desired active background color */
+  color: white !important; /* Set active text color to white */
+  text-decoration: none; /* Remove underline if present */
+}
+
+/* Set styles for inactive dropdown items */
 .dropdown-menu .dropdown-item {
-font-size: 1.1rem; /* Adjust the font size as needed */
-padding: 8px 10px; /* Optional: Adds padding inside the dropdown item */
-color: black; /* Set text color to black */
+  font-size: 1.1rem; /* Adjust the font size as needed */
+  padding: 8px 10px; /* Optional: Adds padding inside the dropdown item */
+  color: black; /* Default text color for inactive items */
+}
+
+/* Ensure color remains white when hovering over active items */
+.dropdown-item.active:hover,
+.dropdown-item:active:hover {
+  background-color: #0D1F30;
+  color: white; /* Maintain white text color on hover */
 }
 
 /* Add padding between navigation items */
@@ -375,10 +427,27 @@ color: black; /* Set text color to black */
     padding-right: 1rem;
     font-size: 1.5rem; /* Increase the size of icons */
 }
-  
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+}
   .contact-icon {
     color: #0D1F30;
   }
+
+  .security-logo {
+  width: 120px; /* Adjust size as needed */
+  height: auto;
+}
+
+.footer-left, .footer-right {
+  outline: 2px dashed red; /* Adds a dashed red outline to the divs */
+}
 
 
   /*----------------- Cards ----------------- */
