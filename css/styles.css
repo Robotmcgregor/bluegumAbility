@@ -286,7 +286,7 @@ ul ul ul {
 
 /* Add padding between navigation items */
 .navbar-nav .nav-item {
-  padding-right: 2px; 
+  padding-right: 15px; 
 }
 
 .navbar-brand img {
