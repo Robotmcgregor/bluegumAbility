@@ -678,7 +678,7 @@ ul ul ul {
 
 .list-container ul {
   list-style-type: disc; /* Disc bullets for better visibility */
-  padding-left: 20px;
+  padding-left: 1rem;
   text-align: left; /* Align text to the left within the list */
   width: 90%; /* Set the width to a flexible percentage */
   max-width: 800px; /* Restrict maximum width for large screens */
