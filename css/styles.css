@@ -499,16 +499,17 @@ ul ul ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* Distributes cards evenly */
-    gap: 20px; /* Adds space between the cards */
+    gap: 10px; /* Adds space between the cards */
   }
 
   .card-container {
     display: flex;
-    justify-content: space-between; /* Optional: Adds spacing between cards */
-    gap: 20px; /* Optional: Adds gap between cards */
+
+    gap: 10px; /* Optional: Adds gap between cards */
     max-width: 1200px; /* Adjust based on your design */
     margin: 0 auto;
     padding: 20px;
+
 }
 
 .card {
@@ -864,6 +865,7 @@ ul ul ul {
   .card-container {
       flex-direction: column;
       gap: 15px;
+      align-items: center; /* Center-align each card in the column layout */
   }
   
   .card {
