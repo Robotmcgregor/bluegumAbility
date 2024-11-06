@@ -120,6 +120,16 @@ body {
     color: #FFFFFF;
   }
   
+/* General link styling */
+a {
+  color: #007BFF; /* Default color for links */
+  text-decoration: none; /* Removes underline */
+}
+
+/* Darker color on hover */
+a:hover {
+  color: #0D1F30; /* Darker shade for hover */
+}
 
   /* Container section */
   
@@ -413,6 +423,39 @@ ul ul ul {
 .banner-section .col-md-8 {
   width: 80%; /* Increase the width of the text area */
   margin: 0 auto; /* Center the text container */
+}
+
+
+
+
+.text-container {
+  text-align: left !important; /* Forces left alignment */
+  padding: 30px 20px 20px 40px !important; /* Forces padding on all sides, with 30px on the left */
+  margin-left: 0 !important; /* Ensures no additional margin on the left */
+  width: 100% !important; /* Ensures container takes full width of the parent */
+  box-sizing: border-box; /* Keeps padding within the container width */
+}
+
+.left-text {
+
+  padding-left: 30px; /* Adds 5px padding on the left */
+  width: 80% !important; /* Ensures the container takes the full width of its parent */
+  position: relative; /* Positions the container relative to the left */
+  display: block; /* Ensures it’s treated as a full-width block */
+  padding: 20px;
+}
+
+
+/* Specific styling for paragraphs and lists */
+.text-container h2, .text-container p, .text-container ul, .text-container ol, .text-container li {
+  text-align: left; /* Ensures all content is left-aligned */
+  margin-left: 20 !important; /* Remove additional left margin if not needed */
+  padding-left: 20 !important; /* Reset padding */
+}
+
+/* Optional styling for list indentation */
+.text-container ul, .text-container ol {
+  padding-left: 20px; /* Adjust for desired list indentation */
 }
 
 /* --------------------------------------- Footer -------------------------------------- */
