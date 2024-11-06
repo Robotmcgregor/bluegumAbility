@@ -1,48 +1,55 @@
 
-  // Assign current field to navigation items
-  document.addEventListener("DOMContentLoaded", function() {
-    // Get the current URL path (excluding domain)
-    var currentPath = window.location.pathname.split("/").pop();
-    if (currentPath === "" || currentPath === "/") {
+// Assign current field to navigation items
+document.addEventListener("DOMContentLoaded", function() {
+  // Get the current URL path (excluding domain)
+  var currentPath = window.location.pathname.split("/").pop();
+  if (currentPath === "" || currentPath === "/") {
       currentPath = "index.html"; // Set default for the homepage
-    }
+  }
 
-    // Get all navigation links
-    var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-    var dropdownLinks = document.querySelectorAll(".dropdown-menu .dropdown-item");
-    var servicesDropdown = document.getElementById("navbarDropdown");
+  // Get all navigation links
+  var navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  var dropdownLinks = document.querySelectorAll(".dropdown-menu .dropdown-item");
+  
+  // Dropdown elements for "Services" and "Policies"
+  var servicesDropdown = document.getElementById("servicesDropdown");
+  var policyDropdown = document.getElementById("policyDropdown");
 
-    // Loop through links to check if the href matches the current path
-    let isActive = false;
-    navLinks.forEach(function(link) {
+  // Loop through links to check if the href matches the current path
+  let isActive = false;
+  navLinks.forEach(function(link) {
       var linkPath = link.getAttribute("href").split("/").pop(); // Only compare the last part of the href
       if (linkPath.toLowerCase() === currentPath.toLowerCase()) {
-        link.classList.add("current-page");
-        isActive = true;
+          link.classList.add("current-page");
+          isActive = true;
       }
-    });
-
-    // Check if any dropdown items match the current path
-    dropdownLinks.forEach(function(link) {
-      var linkPath = link.getAttribute("href").split("/").pop();
-      if (linkPath.toLowerCase() === currentPath.toLowerCase()) {
-        link.classList.add("current-page");
-        if (servicesDropdown) {
-          servicesDropdown.classList.add("current-page");
-        }
-        isActive = true;
-      }
-    });
-
-    // Optionally, highlight 'Home' if no other active links are found
-    if (!isActive) {
-      var homeLink = document.querySelector('a[href="index.html"], a[href="/"]');
-      if (homeLink) {
-        homeLink.classList.add("current-page");
-      }
-    }
   });
 
+  // Check if any dropdown items match the current path for Services or Policies
+  dropdownLinks.forEach(function(link) {
+      var linkPath = link.getAttribute("href").split("/").pop();
+      if (linkPath.toLowerCase() === currentPath.toLowerCase()) {
+          link.classList.add("current-page");
+
+          // Check which dropdown the link belongs to and add 'current-page' to the appropriate dropdown
+          if (link.closest(".dropdown-menu").previousElementSibling === servicesDropdown) {
+              servicesDropdown.classList.add("current-page");
+          } else if (link.closest(".dropdown-menu").previousElementSibling === policyDropdown) {
+              policyDropdown.classList.add("current-page");
+          }
+
+          isActive = true;
+      }
+  });
+
+  // Optionally, highlight 'Home' if no other active links are found
+  if (!isActive) {
+      var homeLink = document.querySelector('a[href="index.html"], a[href="/"]');
+      if (homeLink) {
+          homeLink.classList.add("current-page");
+      }
+  }
+});
 
 
   // Disabling form submissions if there are invalid fields
