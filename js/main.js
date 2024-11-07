@@ -1,10 +1,9 @@
-
 // Assign current field to navigation items
 document.addEventListener("DOMContentLoaded", function() {
   // Get the current URL path (excluding domain)
   var currentPath = window.location.pathname.split("/").pop();
   if (currentPath === "" || currentPath === "/") {
-      currentPath = "index.html"; // Set default for the homepage
+      currentPath = "/"; // Set default for the homepage
   }
 
   // Get all navigation links
@@ -44,13 +43,51 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Optionally, highlight 'Home' if no other active links are found
   if (!isActive) {
-      var homeLink = document.querySelector('a[href="index.html"], a[href="/"]');
+      var homeLink = document.querySelector('a[href="/"], a[href=""]');
       if (homeLink) {
           homeLink.classList.add("current-page");
       }
   }
+
+  // Lazy loading of images
+  let lazyImages = [].slice.call(document.querySelectorAll("img.lazyload"));
+
+  if ("IntersectionObserver" in window) {
+      let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+          entries.forEach(function(entry) {
+              if (entry.isIntersecting) {
+                  let lazyImage = entry.target;
+                  lazyImage.src = lazyImage.dataset.src;
+                  lazyImage.classList.remove("lazyload");
+                  lazyImage.classList.add("lazyloaded");
+                  lazyImageObserver.unobserve(lazyImage);
+              }
+          });
+      });
+
+      lazyImages.forEach(function(lazyImage) {
+          lazyImageObserver.observe(lazyImage);
+      });
+  } else {
+      // Fallback for browsers without IntersectionObserver support
+      lazyImages.forEach(function(lazyImage) {
+          lazyImage.src = lazyImage.dataset.src;
+          lazyImage.classList.remove("lazyload");
+          lazyImage.classList.add("lazyloaded");
+      });
+  }
 });
 
+// Show the trust seal for 10 seconds
+document.addEventListener('DOMContentLoaded', function() {
+  var trustSealContainer = document.getElementById('trust-seal-container');
+  if (trustSealContainer) {
+    trustSealContainer.style.display = 'block';
+    setTimeout(function() {
+      trustSealContainer.style.display = 'none';
+    }, 10000);
+  }
+});
 
   // Disabling form submissions if there are invalid fields
   (function() {
@@ -72,45 +109,33 @@ document.addEventListener("DOMContentLoaded", function() {
   })();
 
 // Show/hide the "Other" gender text input
-
-    document.addEventListener("DOMContentLoaded", function () {
-      const genderOther = document.getElementById('genderOther');
-      const otherGenderDiv = document.getElementById('otherGenderDiv');
-      
-      document.querySelectorAll('input[name="gender"]').forEach((radio) => {
-        radio.addEventListener('change', function () {
-          if (genderOther.checked) {
-            otherGenderDiv.style.display = 'block';  // Show the 'Other' text input field
-          } else {
-            otherGenderDiv.style.display = 'none';   // Hide the 'Other' text input field
-          }
-        });
-      });
+document.addEventListener("DOMContentLoaded", function () {
+  const genderOther = document.getElementById('genderOther');
+  const otherGenderDiv = document.getElementById('otherGenderDiv');
+  
+  document.querySelectorAll('input[name="gender"]').forEach((radio) => {
+    radio.addEventListener('change', function () {
+      if (genderOther.checked) {
+        otherGenderDiv.style.display = 'block';  // Show the 'Other' text input field
+      } else {
+        otherGenderDiv.style.display = 'none';   // Hide the 'Other' text input field
+      }
     });
+  });
+});
 
+// Example scrollFunction implementation
+function scrollFunction() {
+    var someElement = document.getElementById('someElementId');
+    if (someElement) {
+        someElement.style.display = 'block';
+    }
+}
 
-
-      //Get the button:
-      mybutton = document.getElementById("myBtn");
-
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {
-        scrollFunction()
-      };
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-      }
+// Ensure scrollFunction is called appropriately
+window.addEventListener('scroll', function() {
+    scrollFunction();
+});
 
 
 

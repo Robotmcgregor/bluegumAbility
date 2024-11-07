@@ -165,4 +165,25 @@ Recapture Server side V2: : 6LeUpWkqAAAAAEwVk7TumwzKjy6Ynhwi7z7uUyE1
 
 
 
-    
+      // Verify reCAPTCHA response
+    $recaptchaSecret = getenv('RECAPTCHA_SECRET_KEY');  // Use environment variable for Secret Key
+    $recaptchaResponse = $_POST['g-recaptcha-response'];
+    $verifyUrl = "https://www.google.com/recaptcha/api/siteverify"; 
+
+
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(jpg|jpeg|png|gif|css|js|woff2)$">
+    Header set Cache-Control "max-age=31536000, public"
+  </FilesMatch>
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://trusted-cdn.com; object-src 'none';"
+  Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+    <IfModule mod_headers.c>
+  <FilesMatch "\.(jpg|jpeg|png|gif|css|js|woff2)$">
+    Header set Cache-Control "max-age=31536000, public"
+  </FilesMatch>
+  Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://trusted-cdn.com; object-src 'none';"
+  Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>

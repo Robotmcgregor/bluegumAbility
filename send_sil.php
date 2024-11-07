@@ -1,4 +1,15 @@
 <?php
+header("Content-Security-Policy: default-src 'self'; style-src 'self' https://stackpath.bootstrapcdn.com;");
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIL Enquiry</title>
+</head>
+<body>
+<?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Sanitize and collect form data
     $first_name = htmlspecialchars($_POST['first_name']);
@@ -16,13 +27,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Verify reCAPTCHA response
-    $recaptchaSecret = "6LeUpWkqAAAAAEwVk7TumwzKjy6Ynhwi7z7uUyE1";  // Use your Secret Key here
-    $recaptchaResponse = $_POST['g-recaptcha-response'];
-    $verifyUrl = "https://www.google.com/recaptcha/api/siteverify";
-    
+    $recaptchaSecret = getenv('RECAPTCHA_SECRET_KEY');  // Use environment variable for Secret Key
+    $recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
+
+    // Debugging: Print reCAPTCHA secret key and response
+    echo "<pre>reCAPTCHA Secret Key: $recaptchaSecret</pre>";
+    echo "<pre>reCAPTCHA Response: $recaptchaResponse</pre>";
+
+    // Check if reCAPTCHA response is set
+    if (empty($recaptchaResponse)) {
+        echo "reCAPTCHA response is missing.";
+        exit();
+    }
+
     // Make the API request to verify the reCAPTCHA response
+    $verifyUrl = "https://www.google.com/recaptcha/api/siteverify";
     $response = file_get_contents($verifyUrl . "?secret=" . $recaptchaSecret . "&response=" . $recaptchaResponse);
     $responseData = json_decode($response);
+
+    // Debugging: Echo the response and responseData
+    echo "<pre>Response: $response</pre>";
+    echo "<pre>Response Data: ";
+    print_r($responseData);
+    echo "</pre>";
 
     if ($responseData->success) {
         // Set the recipient email and subject
@@ -61,3 +88,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo "Access denied.";
 }
 ?>
+</body>
+</html>

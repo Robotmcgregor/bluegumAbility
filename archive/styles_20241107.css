@@ -1,0 +1,1118 @@
+/* ELEMENTS */
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: white;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+  
+h1, h2, h3, h4, h5, p {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #0D1F30;
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: square;
+    margin: 1rem;
+    padding: 0rem;
+}
+
+footer {
+    background-color: #0D1F30;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto; /* Pushes the footer to the bottom of the page */
+}
+  
+/* CLASS */
+
+.form-check-padding {
+    padding-top: 1rem;
+}
+  
+.form-button-padding {
+    margin-top: 1rem;
+}
+
+.ndis-list {
+    list-style-position: outside;
+}
+
+.title-h1 {
+    line-height: 1.5;
+    color: #0D1F30;
+    font-weight: 900;
+}
+
+.title-h2 {
+    font-family: 'Pontano Sans', sans-serif;
+    color: #0D1F30;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.title-h3 {
+    font-family: 'Pontano Sans', sans-serif;
+    color: #0D1F30;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.section-h2 {
+    color: #FFFFFF;
+}
+
+.section-h3 {
+    color: #FFFFFF;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.footer-p {
+    padding-top: 1rem;
+    color: #FFFFFF;
+}
+  
+/* General link styling */
+a {
+    color: #007BFF; /* Default color for links */
+    text-decoration: none; /* Removes underline */
+}
+
+/* Darker color on hover */
+a:hover {
+    color: #0D1F30; /* Darker shade for hover */
+}
+
+/* Container section */
+  
+.container-fluid {
+    padding: 4% 4% 5%;
+    flex: 1;
+}
+
+#services .container-fluid {
+    padding: 4% 2% 1%;
+}
+
+.ndis-container-fluid {
+    padding: 2% 12%;
+}
+
+.next-step {
+    padding: 2rem 0rem;
+}
+
+#title .container-fluid {
+    padding: 2% 14%;
+}
+
+#footer .container-fluid {
+    padding: 2% 2% 1%;
+}
+
+#banner-section .container-fluid {
+    padding: 4% 4% 5%;
+    flex: 1;
+}
+  
+/* --------------------------------------- sections -------------------------------------- */
+  
+.section-heading {
+    line-height: 1.5;
+    font-size: 3rem;
+}
+
+.coloured-section {
+    background-color: #0D1F30;
+}
+
+.coloured-section h3, 
+.coloured-section p, .coloured-section li {
+    color: white;
+}
+
+.container-fluid-content {
+    padding: 4% 4% 1%;
+    flex: 1;
+    margin: 0 auto;   
+    width: 80%;  
+    text-align: center; 
+    border-radius: 5px; /* Rounds the corners */
+}
+
+.container-fluid-content-cards {
+    padding: 2% 2% 1%;
+    flex: 1;
+    margin: 0 auto;   
+    width: 90%;  
+    text-align: center; 
+    border-radius: 5px; /* Rounds the corners */
+    padding-top: 20px; /* Padding when cards are in normal layout */
+    padding-bottom: 20px;
+}
+
+.white-section {
+    background-color: #FFFFFF;
+}
+
+.off-white-section {
+    background-color: #F7F9F9;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #0D1F30;
+    color: white;
+}
+
+/* --------------------------------------- lists -------------------------------------- */
+
+/* Reset list styling */
+ul {
+    list-style-type: disc; /* Choose a disc, or other styles like circle/square */
+    padding-left: 50px; /* Reduce the indentation of top-level list items */
+}
+
+/* Apply specific padding to nested lists */
+ul ul {
+    list-style-type: circle; /* Use a different bullet style for nested lists */
+    padding-left: 20px; /* Adjust padding for nested list indentation */
+}
+
+/* Add optional styling for better spacing */
+ul li {
+    margin: 15px 0; /* Adjust vertical spacing between list items */
+    text-align: left; /* Align heading to the left */
+}
+
+/* Optional: Styling for more nested lists if needed */
+ul ul ul {
+    list-style-type: square; /* Change bullet style for deeper nesting levels */
+    padding-left: 20px;
+}
+
+/* --------------------------------------- Navbar -------------------------------------- */
+
+.nav-section {
+    background-color: #FFFFFF;
+}
+
+.logo-img {
+    height: 3rem;
+    width: auto;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    padding-right: 20px;
+    color: black;
+}
+
+.current-page {
+    color: #ffffff !important; /* Change text color */
+    background-color: #0D1F30 !important; /* Change background color */
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #0D1F30;
+    color: white !important;
+    text-decoration: none;
+}
+
+.dropdown-menu .dropdown-item {
+    font-size: 1rem; 
+    color: black; 
+}
+
+/* Ensure dropdown items have the same font size and color as main nav items */
+.navbar-nav .nav-link,
+.dropdown-menu .dropdown-item {
+    font-size: 1rem; /* Set the same font size */
+    color: black; /* Set the same color */
+}
+
+.dropdown-item.active:hover,
+.dropdown-item:active:hover {
+    background-color: #0D1F30;
+    color: white; 
+}
+
+/* Add padding between navigation items */
+.navbar-nav .nav-item {
+    padding-right: 15px; 
+}
+
+.navbar-brand img {
+    height: 4rem;              
+    margin-right: 10px;         
+    vertical-align: middle;    
+}
+
+.navbar-brand {
+    font-size: 1.4rem;         
+    vertical-align: middle;    
+    display: inline-flex;       
+    align-items: center;        
+}
+
+/* ---------- Hover ---------- */
+
+.nav-link,
+.dropdown-item,
+.current-page {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover,
+.dropdown-item:hover,
+.current-page:hover {
+    color: black !important; /* Change hover text color */
+    background-color: #7d7e7e !important; /* Change hover background color */
+}
+
+/* Set styles for active dropdown items */
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #0D1F30; /* Your desired active background color */
+    color: white; /* Set active text color to white */
+    text-decoration: none; /* Remove underline if present */
+}
+
+/* Set styles for inactive dropdown items */
+.dropdown-menu .dropdown-item {
+    font-size: 1.1rem; /* Adjust the font size as needed */
+    padding: 8px 10px; /* Optional: Adds padding inside the dropdown item */
+    color: black; /* Default text color for inactive items */
+}
+
+/* Ensure color remains white when hovering over active items */
+.dropdown-item.active:hover,
+.dropdown-item:active:hover {
+    color: white; /* Maintain white text color on hover */
+}
+
+/* --------------------------------------- Buttons -------------------------------------- */
+
+.custom-btn {
+    background-color: #F28C28;  
+    color: white;               
+    border: none;              
+    padding: 10px 20px;       
+    text-decoration: none;     
+    border-radius: 2px;       
+    display: inline-block;     
+}
+
+.custom-btn:hover {
+    background-color: #0D1F30;  
+    color: #FFFFFF;              
+}
+
+.custom-btn-alt {
+    background-color: #0D1F30;  
+    color: white;              
+    border: none;             
+    padding: 10px 20px;        
+    text-decoration: none;     
+    border-radius: 2px;        
+    display: inline-block;     
+}
+
+.custom-btn-alt:hover {
+    background-color: #F28C28; 
+    color: #FFFFFF;              
+}
+
+/* --------------------------------------- Banner -------------------------------------- */
+
+.banner-section {
+    background-color: #0D1F30;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.banner-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.banner-img {
+    max-width: 100%; /* Ensures the image fits within the container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Ensures proper rendering of the image */
+    border-radius: 0px; /* Optional: Adds a slight border radius to the image */
+}
+
+.banner-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;      
+    text-align: center;    
+}
+
+.banner-section .col-md-8 {
+    width: 80%; /* Increase the width of the text area */
+    margin: 0 auto; /* Center the text container */
+}
+
+.text-container {
+    text-align: left !important; /* Forces left alignment */
+    padding: 30px 20px 20px 40px !important; /* Forces padding on all sides, with 30px on the left */
+    margin-left: 0 !important; /* Ensures no additional margin on the left */
+    width: 100% !important; /* Ensures container takes full width of the parent */
+    box-sizing: border-box; /* Keeps padding within the container width */
+}
+
+.left-text {
+    padding-left: 30px; /* Adds 5px padding on the left */
+    width: 80% !important; /* Ensures the container takes the full width of its parent */
+    position: relative; /* Positions the container relative to the left */
+    display: block; /* Ensures it’s treated as a full-width block */
+    padding: 20px;
+}
+
+/* Specific styling for paragraphs and lists */
+.text-container h2, .text-container p, .text-container ul, .text-container ol, .text-container li {
+    text-align: left; /* Ensures all content is left-aligned */
+    margin-left: 20 !important; /* Remove additional left margin if not needed */
+    padding-left: 20 !important; /* Reset padding */
+}
+
+/* Optional styling for list indentation */
+.text-container ul, .text-container ol {
+    padding-left: 20px; /* Adjust for desired list indentation */
+}
+
+/* --------------------------------------- Footer -------------------------------------- */
+
+.footer-section {
+    display: flex;
+    justify-content: space-between; /* Ensures space between left and right sections */
+    align-items: center; /* Aligns items vertically in the center */
+    background-color: #0D1F30;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-i {
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem; /* Increase the size of icons */
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+}
+
+.footer-right p {
+    margin: 0;
+    padding: 2px 0;
+}
+
+.footer-right a {
+    color: #F28C28;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Pushes the footer-right section to the far right */
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----------------- Cards ----------------- */
+
+.card-container-inline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distributes cards evenly */
+    gap: 10px; /* Adds space between the cards */
+}
+
+.card-container {
+    display: flex;
+    gap: 10px; /* Optional: Adds gap between cards */
+    max-width: 1200px; /* Adjust based on your design */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+}
+
+.card img {
+    width: 100%; /* Maintain the full width of the card */
+    height: auto; /* Maintain the aspect ratio of the image */
+    object-fit: cover; /* Crop if necessary to fill the space */
+}
+
+/* House photos */
+.card-img-top {
+    width: 100%;
+    height: 300px; /* Default height */
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .card-img-top {
+        height: 250px; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 200px; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .card-img-top {
+        height: 150px; /* Adjust height for very small screens */
+    }
+}
+
+/* ------------------------------------------------- Gallery -------------------------------------- */
+
+.photo-gallery {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.photo-gallery h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 15px; /* Space between items */
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Rounded corners for gallery items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for depth */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth zoom-in on hover */
+}
+
+.caption-container {
+    position: absolute;
+    bottom: 0;
+    background: #fff; /* Semi-transparent black background */
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.7rem;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+    opacity: 0; /* Hidden by default */
+}
+
+.gallery-item:hover .caption-container {
+    opacity: 1; /* Show caption on hover */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+/* Lazy loading styles */
+.lazyload {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.lazyloaded {
+    opacity: 1;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    .gallery-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust grid layout for smaller screens */
+    }
+
+    .banner-img {
+        height: 250px; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust grid layout for smaller screens */
+    }
+
+    .banner-img {
+        height: 200px; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-container {
+        grid-template-columns: 1fr; /* Single column layout for very small screens */
+    }
+
+    .banner-img {
+        height: 150px; /* Adjust height for very small screens */
+    }
+}
+
+/* Photo Gallery Container */
+.photo-gallery {
+    padding: 20px;
+    background-color: #f9f9f9; /* Optional: light background color for contrast */
+}
+
+/* Gallery Items */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 15px; /* Space between items */
+}
+
+/* Individual Gallery Item */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Rounded corners for gallery items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for depth */
+}
+
+/* Gallery Image */
+.gallery-item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth zoom-in on hover */
+}
+
+/* Caption Container */
+.caption-container {
+    position: absolute;
+    bottom: 0;
+    background: #fff; /* Semi-transparent black background */
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.7rem;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease;
+    opacity: 0; /* Hidden by default */
+}
+
+/* Show Caption on Hover */
+.gallery-item:hover .caption-container {
+    opacity: 1; /* Show caption on hover */
+}
+
+/* Zoom-in Effect on Hover */
+.gallery-item:hover img {
+    transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+/* --------------------------------------- Houses -------------------------------------- */
+
+.container-fluid-content-houses {
+    padding: 4% 4% 1%;
+    flex: 1;
+    margin: 0 auto;   
+    width: 100%;  
+    text-align: center; 
+    border-radius: 5px; /* Rounds the corners */
+    background-color: white; /* Optional: Add a background to make the div stand out */
+}
+
+.recaptcha-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.75); /* Adjust the scale value as needed (e.g., 0.5 for 50%, 0.8 for 80%) */
+    transform-origin: center; /* Aligns the reCAPTCHA to the center */
+    -webkit-transform: scale(0.75);
+    -webkit-transform-origin: center;
+    margin: 0 auto; /* Ensure the container is centered horizontally */
+    width: 100%; /* Ensure the container takes up the full width */
+}
+
+.recaptcha-container iframe {
+    height: auto !important; /* Adjust iframe height automatically */
+    display: block;
+}
+
+/* --------------------------------------- Coordination -------------------------------------- */   
+
+.list-section h3, 
+.list-section p {
+    text-align: left; /* Aligns the headings and paragraphs to the left */
+    margin-left: 1rem; /* Adds a small left margin for spacing (optional) */
+}
+
+.list-container {
+    display: flex;
+    justify-content: center;
+}
+
+.list-container ul {
+    list-style-type: disc; /* Disc bullets for better visibility */
+    padding-left: 1rem;
+    text-align: left; /* Align text to the left within the list */
+    width: 90%; /* Set the width to a flexible percentage */
+    max-width: 800px; /* Restrict maximum width for large screens */
+    margin: 0 auto; /* Center align the list container */
+}
+
+.list-container li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem; /* Add spacing between each list item */
+}
+
+/* --------------contact form ----------------- */
+.contact-form {
+    padding-bottom: 1rem;
+}
+
+/* ============================================== Devices ==============================================*/
+
+/* =================================== Small Laptop and landscape tablets ================================= */
+
+@media (max-width: 1024px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .contact-col {
+        padding: 2rem 2rem;
+    }
+
+    /* ----------------Navbar---------------- */
+
+    /* Logo image */
+
+    /* Shrink the logo image */
+    .navbar-brand img {
+        height: 2rem; /* Adjust the height of the image */
+        margin-right: 5px;
+    }
+
+    /* Hide the "Bluegum Ability Services" text */
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-brand img {
+        display: inline;
+        max-height: 50px;
+        height: auto;
+        margin-right: 5px;
+    }
+
+    .navbar-brand {
+        font-size: 0; /* Set font size to 0 to hide the text */
+    }
+
+    /* Hide the "Bluegum Ability Services" text */
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Adjust padding between navigation items */
+    .navbar-nav .nav-item {
+        padding-right: 10px; /* Adjust padding as needed */
+    }
+
+    .nav-section a {
+        font-size: 1rem; /* Adjust the font size of the links */
+    }
+
+    .dropdown-item {
+        font-size: 0.8rem; /* Adjust the font size of the links */
+    }
+
+    /* --------------------------------- Toggle --------------------------------- */
+
+    /* Make the hamburger toggle icon smaller */
+    .navbar-toggler-icon {
+        width: 1.5rem; /* Adjust the width */
+        height: 1.5rem; /* Adjust the height */
+    }
+
+    /* Optional: Adjust the padding for the navbar-toggler button */
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem; /* Adjust padding if needed */
+    }
+
+    .title-h3 {
+        display: none !important;
+    }
+
+    .footer-p {
+        display: none !important;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ======================================== standard mobile phone iPad mini ======================================= */
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    h4 {
+        font-size: 0.8rem;
+    }
+
+    /* Make the columns stay inline by reducing the width percentages */
+    .banner-left {
+        flex: 1 1 60%; /* Take up 60% of the width */
+        text-align: center; /* Keep text aligned to center */
+    }
+
+    .col-md-4 {
+        flex: 1 1 40%; /* Take up 40% of the width */
+    }
+
+    .banner-img {
+        width: auto; /* Make the image slightly smaller */
+        height: 100%;
+    }
+
+    .contact-div {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .contact-col {
+        padding: 1rem 1rem;
+        padding-right: 2rem;
+    }
+
+    .title-h3 {
+        font-size: 2rem;
+    }
+
+    .social-media {
+        display: none !important;
+    }
+
+    .footer-p {
+        display: none !important;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust grid layout for smaller screens */
+    }
+
+    /* --------------------------------- Cards --------------------------------- */
+
+    .card-container-inline {
+        justify-content: center; /* Centers cards on smaller screens */
+    }
+
+    .card-container {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center; /* Center-align each card in the column layout */
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    /* Adjust the house cards */
+
+    .houses-container .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .houses-container .col-md-6 {
+        width: 100%; /* Make the columns take full width on smaller screens */
+        display: flex;
+        justify-content: center;
+    }
+
+    .houses-container .card {
+        width: 100%; /* Ensure cards take full width of the container */
+        max-width: 500px; /* Optional: Set a max-width to limit the card size */
+        margin-bottom: 20px; /* Add some spacing between stacked cards */
+    }
+
+    /* --------------------------------- Pagination --------------------------------- */
+
+    .pagination {
+        display: flex;
+        justify-content: center; /* Centers the pagination */
+        margin-top: 20px; /* Adds spacing above the pagination */
+    }
+
+    .page-item {
+        list-style: none; /* Removes default list styling */
+    }
+
+    .page-link {
+        text-decoration: none;
+        color: #007bff; /* Bootstrap primary blue */
+        padding: 10px 15px;
+        border: 1px solid #007bff; /* Border around each page button */
+        border-radius: 2px;
+        margin: 0 5px; /* Adds space between page buttons */
+        transition: background-color 0.3s ease;
+    }
+
+    .page-link:hover {
+        background-color: #007bff;
+        color: white;
+    }
+
+    /* Optional: Active state style */
+    .page-item.active .page-link {
+        background-color: #007bff;
+        color: white;
+        border-color: #007bff;
+    }
+
+    /* --------------------------------- Houses --------------------------------- */
+    .card {
+        margin-bottom: 20px; /* Adds spacing between cards */
+        margin-left: 10px; /* Adds space to the left of each card */
+        margin-right: 10px; /* Adds space to the right of each card */
+        margin-bottom: 20px; /* Adds spacing between cards */
+        gap: 15px;
+    }
+
+    .houses-container {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .sil-content {
+        display: none !important;
+    }
+
+    .card-img-top {
+        height: 200px; /* Adjust the height of the card image */
+        object-fit: cover; /* Ensure the image covers the card */
+    }
+
+    .card {
+        max-width: 70%;
+        margin-left: 7%;
+        text-align: center;
+    }
+
+    /* -------------------- COS ------------------- */
+
+    .cos-section {
+        display: none;
+    }
+
+    .list-section h3 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .list-section p {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .list-section li {
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+}
+
+/* ============================== Portrait mode phone and small tablets ==================================== */
+
+@media (max-width: 600px) {
+
+    /* ----------------Navbar---------------- */
+
+    /* Adjust dropdown item font size */
+    .dropdown-menu .dropdown-item {
+        font-size: 0.8rem; /* Reduce the font size of dropdown items */
+        padding: 8px 10px; /* Adjust padding for dropdown items */
+    }
+
+    /* --------------------------------- Banner --------------------------------- */ 
+
+    .banner-section .row {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center elements horizontally */
+    }
+
+    .banner-section .col-md-8 {
+        width: 100%; /* Make each column take full width */
+        text-align: center; /* Center-align text within each column */
+    }
+
+    .banner-section .col-md-8 {
+        padding-bottom: 15px; /* Add some spacing between the text and image */
+        padding-top: 15px;
+    }
+
+    .banner-section .col-md-4 {
+        display: none; /* Hide the image container on smaller screens */
+    }
+
+    /* --------------------------------- Cards --------------------------------- */
+    .card {
+        max-width: 90%;
+        margin-left: 7%;
+        text-align: center;
+    }
+
+    .card-img-top {
+        height: 200px; /* Adjust the height of the card image */
+        object-fit: cover; /* Ensure the image covers the card */
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card h5 {
+        font-size: 1rem;
+    }
+
+    .card h6,
+    .card p {
+        display: none;
+    }
+
+    /* --------------------------------- Footer --------------------------------- */
+
+    .footer-p {
+        display: none !important;
+    }
+
+    .footer-r {
+        display: none !important;
+    }
+
+    .footer-i {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+}
+
+/* Custom styles for radio buttons */
+.custom-radio .form-check-input {
+    display: none;
+}
+
+.custom-radio .form-check-label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.custom-radio .form-check-label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #0D1F30;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.custom-radio .form-check-input:checked + .form-check-label::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0D1F30;
+}
+
+/* ----- #1E73BE ----- */

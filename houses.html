@@ -3,20 +3,16 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Bluegum Ability Photo Gallery</title>
+  <title>Bluegum Ability Services | Supported Independent Living (SIL) for NDIS Participants</title>
 
   <!-- Viewport Meta Tag for Responsive Design -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO Optimized Title Tag -->
-  <title>Bluegum Ability Services | Supported Independent Living (SIL) for NDIS Participants</title>
 
   <!-- Meta Description -->
   <meta name="description" content="Bluegum Ability Services offers quality Supported Independent Living (SIL) options for NDIS participants, providing a safe, supportive environment to foster independence and enhance daily living skills. Explore our SIL homes across Northern Territory and Queensland.">
 
   <!-- Meta Keywords -->
   <meta name="keywords" content="Supported Independent Living, SIL, NDIS SIL provider, disability housing, Bluegum Ability Services, NDIS registered provider, supported accommodation, disability support NT, disability housing Queensland, independent living, NDIS services Northern Territory, disability support Queensland, Darwin, Tennant Creek, Katherine, Alice Springs, Palmerston, QLD, Cairns, Townsville, Mackay, Rockhampton, independent living support, SIL homes">
-
 
   <!-- Robots Meta Tag (For Search Engines) -->
   <meta name="robots" content="index, follow">
@@ -32,7 +28,7 @@
 
   <!-- CSS stylesheets -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css?v=1.5">
+  <link rel="stylesheet" href="css/styles.css?v=1.6">
   <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
 
   <!-- Google fonts -->
@@ -44,32 +40,42 @@
   <script src="https://kit.fontawesome.com/e9eb3a54c1.js" crossorigin="anonymous"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VHXKE67YMY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VHXKE67YMY');
+  </script>
 
-  gtag('config', 'G-VHXKE67YMY');
-</script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VSBY1EPRC9">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VSBY1EPRC9');
-</script>
-
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VSBY1EPRC9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VSBY1EPRC9');
+  </script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <!-- <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net https://stackpath.bootstrapcdn.com https://kit.fontawesome.com https://www.googletagmanager.com;
+    style-src 'self' 'unsafe-inline' https://stackpath.bootstrapcdn.com https://fonts.googleapis.com;
+    img-src 'self' data: https://www.bluegumability.com;
+    font-src 'self' https://fonts.gstatic.com;
+    connect-src 'self';
+    frame-src 'none';
+    object-src 'none';
+    base-uri 'self';
+    form-action 'self';
+  "> -->
 </head>
 
 <body>
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-md navbar-light bg-white">
-  <a class="navbar-brand" href="index.html">
+  <a class="navbar-brand" href="/"></a>
     <img id="brand-logo" src="images/jpeg-optimizer_Brandmark_Standard_Transparent.png" alt="Bluegum Ability Logo" height="50">
     <span id="brand-text">Bluegum Ability</span>
   </a>
@@ -79,14 +85,14 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="/">Home</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Services
         </a>
         <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-          <a class="dropdown-item" href="houses.html">Supported Independent Living (SIL)</a>
+          <!-- <a class="dropdown-item" href="houses.html">Supported Independent Living (SIL)</a> -->
           <a class="dropdown-item" href="coordination.html">Support Coordination (CoS)</a>
         </div>
       </li>
@@ -95,7 +101,8 @@
           Policies
         </a>
         <div class="dropdown-menu" aria-labelledby="policyDropdown">
-          <a class="dropdown-item" href="privacy-policy.html">Privacy</a>
+          <a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a>
+          <a class="dropdown-item" href="transition-policy.html">Exit and Transition Policy</a>
         </div>
       </li>
       <li class="nav-item">
@@ -120,7 +127,7 @@
           </div>
         <div class="col-md-4">
           <!-- You can add any content here for the right cell -->
-          <img src="images\jpeg-optimizer_pexels-disability-photo-banner.jpg" alt="Service Image" class="banner-img" loading="lazy" height="300">
+          <img src="images/placeholder.jpg" data-src="images/jpeg-optimizer_pexels-disability-photo-banner.jpg" alt="Service Image" class="banner-img lazyload" loading="lazy" height="300">
         </div>
       </div>
     </div>
@@ -151,7 +158,7 @@
           <div class="row g-4">
             <div class="col-md-6 outline">
               <div class="card">
-                <img src="images\houses\jpeg-optimizer_palmerston_house_lounge.jpeg" class="card-img-top" alt="Palmerston SIL house lounge." loading="lazy" height="300">
+                <img src="images/houses/jpeg-optimizer_palmerston_house_lounge.jpeg" class="card-img-top" alt="Palmerston SIL house lounge." loading="lazy" height="300">
                 <div class="card-body">
                   <h5 class="card-title">Palmerston</h5>
                   <h6 class="card-subtitle mb-2 text-muted">Male</h6>
@@ -163,7 +170,7 @@
 
             <div class="col-md-6 outline">
               <div class="card">
-                <img src="images\houses\stuart_park_lounge.jpg" class="card-img-top" alt="Stuart Park SIL house lounge room" loading="lazy" height="300">
+                <img src="images/houses/stuart_park_lounge.jpg" class="card-img-top" alt="Stuart Park SIL house lounge room" loading="lazy" height="300">
                 <div class="card-body">
                   <h5 class="card-title">Stuart Park</h5>
                   <h6 class="card-subtitle mb-2 text-muted">Any gender</h6>
@@ -180,7 +187,7 @@
           <div class="row g-4 mt-4">
             <div class="col-md-6">
               <div class="card">
-                    <img src="images\houses\jpeg-optimizer_tennent_creek_loungeroom.jpg" class="card-img-top" alt="Tennant Creek SIL house (one) lounge room." loading="lazy" height="300">
+                    <img src="images/houses/jpeg-optimizer_tennent_creek_loungeroom.jpg" class="card-img-top" alt="Tennant Creek SIL house (one) lounge room." loading="lazy" height="300">
                     <div class="card-body">
                       <h5 class="card-title">Tennant Creek</h5>
                       <h6 class="card-subtitle mb-2 text-muted">Female</h6>
@@ -192,9 +199,9 @@
 
             <div class="col-md-6">
               <div class="card">
-                <img src="images\no_photo_avalible.png" class="card-img-top" alt="Tennant Creek SIL house - no photo available." loading="lazy" height="300">
+                <img src="images/no_photo_avalible.png" class="card-img-top" alt="Tennant Creek SIL house - no photo available." loading="lazy" height="300">
                 <div class="card-body">
-                  <h5 class="card-title">Tennant Creek</h5>
+                  <h5 class="card-title">Tennant Creek</h6>
                   <h6 class="card-subtitle mb-2 text-muted">Female</h6>
                   <p class="card-text">One bedroom available in a two occupant house, enquire now.</p>
                   <a href="contact.html" class="btn custom-btn-alt">Find Out More</a> 
@@ -208,9 +215,10 @@
         <div class="col-lg-4">
           <div class="container mt-5">
             <h2 class="mb-4">Enquire now</h2>
-            <form action="send_sil.php" method="post">
+            <p class="text-center"><span style="color: red;">*</span> Indicates a required fields</p>
+            <form action="send_sil.php" method="post" onsubmit="return validateRecaptcha();">
           <!-- First Name Field -->
-          <div class="form-group">
+          <div class="form-group"></div>
             <label for="firstName"><span style="color: red;">*</span>  First Name:</label>
             <input type="text" class="form-control" id="firstName" name="first_name" placeholder="Enter your first name" required>
           </div>
@@ -222,21 +230,21 @@
           </div>
 
           <!-- Gender Field -->
-          <div class="form-group">
+          <div class="form-group custom-radio">
             <label>Select your gender</label><br>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="gender" id="genderMale" value="Male" required>
+            <div class="form-check form-check-inline custom-radio-btn">
+              <input class="form-check-input" type="radio" name="gender" id="genderMale" value="Male">
               <label class="form-check-label" for="genderMale">Male</label>
             </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="Female" required>
+            <div class="form-check form-check-inline custom-radio-btn">
+              <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="Female">
               <label class="form-check-label" for="genderFemale">Female</label>
             </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="gender" id="genderNonBinary" value="Non-Binary" required>
+            <div class="form-check form-check-inline custom-radio-btn">
+              <input class="form-check-input" type="radio" name="gender" id="genderNonBinary" value="Non-Binary">
               <label class="form-check-label" for="genderNonBinary">Non-Binary</label>
             </div>
-            <div class="form-check form-check-inline">
+            <div class="form-check form-check-inline custom-radio-btn">
               <input class="form-check-input" type="radio" name="gender" id="genderOther" value="Other">
               <label class="form-check-label" for="genderOther">Other</label>
             </div>
@@ -251,7 +259,7 @@
         <!-- Date of Birth Field -->
         <div class="form-group">
           <label for="dob">Date of Birth:</label>
-          <input type="date" class="form-control" id="dob" placeholder="Enter your date of birth" >
+          <input type="date" class="form-control" id="dob" name="dob" placeholder="Enter your date of birth">
         </div>
 
           <!-- Email Field -->
@@ -263,23 +271,23 @@
           <!-- Phone Number Field -->
           <div class="form-group">
             <label for="phone">Phone Number:</label>
-            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
           </div>
 
 
               <!-- NDIS Plan Field -->
-              <div class="form-group">
+              <div class="form-group custom-radio">
                 <label><span style="color: red;">*</span> Do you have an NDIS plan?</label><br>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="ndisPlan" id="ndisYes" value="Yes" >
+                <div class="form-check form-check-inline custom-radio-btn">
+                  <input class="form-check-input" type="radio" name="ndisPlan" id="ndisYes" value="Yes">
                   <label class="form-check-label" for="ndisYes">Yes</label>
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="ndisPlan" id="ndisNo" value="No" >
+                <div class="form-check form-check-inline custom-radio-btn">
+                  <input class="form-check-input" type="radio" name="ndisPlan" id="ndisNo" value="No">
                   <label class="form-check-label" for="ndisNo">No</label>
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="ndisPlan" id="ndisDontKnow" value="Don't know" >
+                <div class="form-check form-check-inline custom-radio-btn">
+                  <input class="form-check-input" type="radio" name="ndisPlan" id="ndisDontKnow" value="Don't know">
                   <label class="form-check-label" for="ndisDontKnow">Don't Know</label>
                 </div>
               </div>
@@ -287,15 +295,13 @@
         <!-- Google reCAPTCHA -->
         <div class="g-recaptcha" data-sitekey="6LeUpWkqAAAAAI08hp44pybAre0IqwuCyq-tyjd4"></div>
         </div>
+        <input type="hidden" id="recaptchaResponse" name="recaptcha_response">
 
         <!-- Submit Button -->
         <button type="submit" class="btn custom-btn-alt mt-3">Submit</button>
     </form>
 
-    <!-- Include the Google reCAPTCHA script -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
           </div>
-          <p class="mt-4"><span style="color: red;">*</span> Indicate required fields</p>
         </div>
       </div>
     </div>
@@ -329,7 +335,22 @@
     </div>
   </footer>
 
- <script src="js\main.js?v=1.1"></script>
+ <script src="js/main.js?v=1.3"></script>
+ <script src="js/houses.js?v=1.0"></script>
+ <script src="js/recaptcha.js"></script>
+ <script>
+  function validateRecaptcha() {
+    var response = grecaptcha.getResponse();
+    console.log("reCAPTCHA Response:", response); // Debugging: Log the reCAPTCHA response
+    if (response.length === 0) {
+        alert("Please complete the reCAPTCHA.");
+        return false;
+    }
+    document.getElementById('recaptchaResponse').value = response;
+    return true;
+  }
+</script>
+
 </body>
 
 </html>
