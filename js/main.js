@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Get the current URL path (excluding domain)
   var currentPath = window.location.pathname.split("/").pop();
   if (currentPath === "" || currentPath === "/") {
-      currentPath = "/"; // Set default for the homepage
+      currentPath = "index.html"; // Set default for the homepage
   }
 
   // Get all navigation links
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Optionally, highlight 'Home' if no other active links are found
   if (!isActive) {
-      var homeLink = document.querySelector('a[href="/"], a[href=""]');
+      var homeLink = document.querySelector('a[href="/"], a[href="index.html"]');
       if (homeLink) {
           homeLink.classList.add("current-page");
       }
@@ -75,6 +75,12 @@ document.addEventListener("DOMContentLoaded", function() {
           lazyImage.classList.remove("lazyload");
           lazyImage.classList.add("lazyloaded");
       });
+  }
+
+  // Ensure the banner image source is correctly set
+  var bannerImg = document.querySelector(".banner-img");
+  if (bannerImg && !bannerImg.src) {
+    bannerImg.src = "images/pexels-disability-photo-banner.jpg"; // Fallback image
   }
 });
 

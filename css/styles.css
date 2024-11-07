@@ -218,6 +218,10 @@ footer {
   color: black !important;
   background-color: #7d7e7e !important;
 }
+.nav-link.active {
+  color: #007bff; /* Change this to your desired active link color */
+  font-weight: bold;
+}
 
 /* Buttons */
 .custom-btn {
