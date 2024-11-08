@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
       var linkPath = link.getAttribute("href").split("/").pop(); // Only compare the last part of the href
       if (linkPath.toLowerCase() === currentPath.toLowerCase()) {
           link.classList.add("current-page");
+          link.parentElement.classList.add("current-page");
           isActive = true;
       }
   });
@@ -42,10 +43,11 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   // Optionally, highlight 'Home' if no other active links are found
-  if (!isActive) {
-      var homeLink = document.querySelector('a[href="/"], a[href="index.html"]');
+  if (!isActive && currentPath === "index.html") {
+      var homeLink = document.querySelector('a[href="index.html"]');
       if (homeLink) {
           homeLink.classList.add("current-page");
+          homeLink.parentElement.classList.add("current-page");
       }
   }
 
@@ -95,24 +97,24 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-  // Disabling form submissions if there are invalid fields
-  (function() {
-    'use strict';
-    window.addEventListener('load', function() {
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.getElementsByClassName('needs-validation');
-      // Loop over them and prevent submission
-      var validation = Array.prototype.filter.call(forms, function(form) {
-        form.addEventListener('submit', function(event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
-    }, false);
-  })();
+// Disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
 
 // Show/hide the "Other" gender text input
 document.addEventListener("DOMContentLoaded", function () {
