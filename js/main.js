@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Ensure the banner image source is correctly set
   var bannerImg = document.querySelector(".banner-img");
   if (bannerImg && !bannerImg.src) {
-    bannerImg.src = "images/pexels-disability-photo-banner.jpg"; // Fallback image
+    bannerImg.src = "pexels-disability-photo-banner.jpg"; // Fallback image
   }
 });
 
