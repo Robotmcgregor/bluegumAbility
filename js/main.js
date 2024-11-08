@@ -51,39 +51,40 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   }
 
-  // Lazy loading of images
-  // let lazyImages = [].slice.call(document.querySelectorAll("img.lazyload"));
+  // Lazy loading function
+  const lazyLoadImages = () => {
+    const lazyImages = document.querySelectorAll('img.lazyload');
+    const config = {
+      rootMargin: '0px 0px 50px 0px',
+      threshold: 0.01
+    };
 
-  // if ("IntersectionObserver" in window) {
-  //     let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-  //         entries.forEach(function(entry) {
-  //             if (entry.isIntersecting) {
-  //                 let lazyImage = entry.target;
-  //                 lazyImage.src = lazyImage.dataset.src;
-  //                 lazyImage.classList.remove("lazyload");
-  //                 lazyImage.classList.add("lazyloaded");
-  //                 lazyImageObserver.unobserve(lazyImage);
-  //             }
-  //         });
-  //     });
+    let observer;
+    if ('IntersectionObserver' in window) {
+      observer = new IntersectionObserver((entries, self) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            img.src = img.dataset.src;
+            img.classList.remove('lazyload');
+            self.unobserve(img);
+          }
+        });
+      }, config);
 
-  //     lazyImages.forEach(function(lazyImage) {
-  //         lazyImageObserver.observe(lazyImage);
-  //     });
-  // } else {
-  //     // Fallback for browsers without IntersectionObserver support
-  //     lazyImages.forEach(function(lazyImage) {
-  //         lazyImage.src = lazyImage.dataset.src;
-  //         lazyImage.classList.remove("lazyload");
-  //         lazyImage.classList.add("lazyloaded");
-  //     });
-  // }
+      lazyImages.forEach(image => {
+        observer.observe(image);
+      });
+    } else {
+      // Fallback for browsers that do not support IntersectionObserver
+      lazyImages.forEach(image => {
+        image.src = image.dataset.src;
+        image.classList.remove('lazyload');
+      });
+    }
+  };
 
-  // Ensure the banner image source is correctly set
-  // var bannerImg = document.querySelector(".banner-img");
-  // if (bannerImg && !bannerImg.src) {
-  //   bannerImg.src = "/pexels-disability-photo-banner.jpg"; // Fallback image
-  // }
+  lazyLoadImages();
 });
 
 // Show the trust seal for 10 seconds
