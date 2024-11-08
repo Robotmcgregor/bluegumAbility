@@ -52,38 +52,38 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Lazy loading of images
-  let lazyImages = [].slice.call(document.querySelectorAll("img.lazyload"));
+  // let lazyImages = [].slice.call(document.querySelectorAll("img.lazyload"));
 
-  if ("IntersectionObserver" in window) {
-      let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-          entries.forEach(function(entry) {
-              if (entry.isIntersecting) {
-                  let lazyImage = entry.target;
-                  lazyImage.src = lazyImage.dataset.src;
-                  lazyImage.classList.remove("lazyload");
-                  lazyImage.classList.add("lazyloaded");
-                  lazyImageObserver.unobserve(lazyImage);
-              }
-          });
-      });
+  // if ("IntersectionObserver" in window) {
+  //     let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+  //         entries.forEach(function(entry) {
+  //             if (entry.isIntersecting) {
+  //                 let lazyImage = entry.target;
+  //                 lazyImage.src = lazyImage.dataset.src;
+  //                 lazyImage.classList.remove("lazyload");
+  //                 lazyImage.classList.add("lazyloaded");
+  //                 lazyImageObserver.unobserve(lazyImage);
+  //             }
+  //         });
+  //     });
 
-      lazyImages.forEach(function(lazyImage) {
-          lazyImageObserver.observe(lazyImage);
-      });
-  } else {
-      // Fallback for browsers without IntersectionObserver support
-      lazyImages.forEach(function(lazyImage) {
-          lazyImage.src = lazyImage.dataset.src;
-          lazyImage.classList.remove("lazyload");
-          lazyImage.classList.add("lazyloaded");
-      });
-  }
+  //     lazyImages.forEach(function(lazyImage) {
+  //         lazyImageObserver.observe(lazyImage);
+  //     });
+  // } else {
+  //     // Fallback for browsers without IntersectionObserver support
+  //     lazyImages.forEach(function(lazyImage) {
+  //         lazyImage.src = lazyImage.dataset.src;
+  //         lazyImage.classList.remove("lazyload");
+  //         lazyImage.classList.add("lazyloaded");
+  //     });
+  // }
 
   // Ensure the banner image source is correctly set
-  var bannerImg = document.querySelector(".banner-img");
-  if (bannerImg && !bannerImg.src) {
-    bannerImg.src = "pexels-disability-photo-banner.jpg"; // Fallback image
-  }
+  // var bannerImg = document.querySelector(".banner-img");
+  // if (bannerImg && !bannerImg.src) {
+  //   bannerImg.src = "/pexels-disability-photo-banner.jpg"; // Fallback image
+  // }
 });
 
 // Show the trust seal for 10 seconds
@@ -132,18 +132,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Example scrollFunction implementation
-function scrollFunction() {
-    var someElement = document.getElementById('someElementId');
-    if (someElement) {
-        someElement.style.display = 'block';
-    }
-}
+// // Example scrollFunction implementation
+// function scrollFunction() {
+//     var someElement = document.getElementById('someElementId');
+//     if (someElement) {
+//         someElement.style.display = 'block';
+//     }
+// }
 
-// Ensure scrollFunction is called appropriately
-window.addEventListener('scroll', function() {
-    scrollFunction();
-});
+// // Ensure scrollFunction is called appropriately
+// window.addEventListener('scroll', function() {
+//     scrollFunction();
+// });
 
 
 
