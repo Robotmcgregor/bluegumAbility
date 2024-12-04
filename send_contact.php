@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($responseData->success) {
         // Set the recipient email and subject
-        $to = "no-reply@bluegumability.com"; // Change to your actual email
+        $to = "no-reply@bluegum-ability-services.com"; // Change to your actual email
         $email_subject = "Contact Form Submission from $name";
         
         // Create the message body
