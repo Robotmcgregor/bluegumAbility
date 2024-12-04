@@ -119,6 +119,7 @@ footer {
   font-weight: 900;
   font-style: normal;
   color: #0a5f72;
+  font-size: 1.6rem; /* Adjust size as needed */
 }
 
 
@@ -393,14 +394,12 @@ footer {
   text-align: center;
   color: white;
   position: relative;
-  /* outline: 2px solid black; */
 }
 
 .banner-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* outline: 2px solid black; */
 }
 
 .banner-img {
@@ -408,7 +407,6 @@ footer {
   height: auto;
   display: block;
   border-radius: 0px;
-  /* outline: 2px solid blue; */
 }
 
 .Sirv {
@@ -416,7 +414,6 @@ footer {
   height: auto;
   display: block;
   border-radius: 0px;
-  /* outline: 2px solid blue; */
   object-fit: cover; /* Ensure the image covers the entire area */
 }
 
@@ -426,7 +423,6 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* outline: 2px solid yellow; */
 }
 
 .banner-section .col-md-8 {
@@ -532,7 +528,9 @@ footer {
   display: flex;
   flex-direction: column;
   margin: 10px 10px;
+  flex: 1 1 calc(50% - 500px); /* Adjust the width to fit two cards per line with gap */
 }
+
 .card img {
   width: 100%;
   height: auto;
@@ -709,6 +707,9 @@ footer {
 
 /* Devices */
 @media (max-width: 1024px) {
+  .roboto-brand {
+    font-size: 1.2rem; /* Adjust size as needed */
+  }
   h1 {
     font-size: 2rem;
   }
@@ -797,6 +798,16 @@ footer {
       height: auto; /* Maintain the aspect ratio */
   }
 
+  .card-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure cards wrap to the next line */
+    gap: 10px; /* Adjust the gap as needed */
+  }
+
+  .card {
+      flex: 1 1 calc(40% - 20px); /* Two cards per row with gap */
+      margin-bottom: 20px; /* Add margin at the bottom for spacing */
+  }
   .contact-div {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -813,17 +824,17 @@ footer {
   .gallery-container {
     grid-template-columns: 1fr;
   }
-  .card-container-inline {
+  /* .card-container-inline {
     justify-content: center;
   }
   .card-container {
     flex-direction: column;
     gap: 15px;
     align-items: center;
-  }
-  .card {
+  } */
+  /* .card {
     width: 100%;
-  }
+  } */
   .houses-container .row {
     display: flex;
     flex-direction: column;
@@ -865,12 +876,12 @@ footer {
     color: white;
     border-color: #007bff;
   }
-  .card {
+  /* .card {
     margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
     gap: 15px;
-  }
+  } */
   .houses-container {
     text-align: center;
     margin-bottom: 40px;
@@ -882,11 +893,11 @@ footer {
     height: 200px;
     object-fit: cover;
   }
-  .card {
+  /* .card {
     max-width: 70%;
     margin-left: 7%;
     text-align: center;
-  }
+  } */
   .cos-section {
     display: none;
   }
@@ -902,6 +913,10 @@ footer {
 }
 
 @media (max-width: 600px) {
+
+  .roboto-brand {
+    font-size: 1rem; /* Adjust size as needed */
+  }
   .dropdown-menu .dropdown-item {
     font-size: 0.8rem;
     padding: 8px 10px;
@@ -936,11 +951,24 @@ footer {
       width: 100% !important; /* Adjust the width as needed */
       height: 100%;
       text-align: left; /* Align text to the left */
-      outline: #721d0a;
   }
 
+  .card-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensure cards wrap to the next line */
+    gap: 10px; /* Adjust the gap as needed */
+  }
 
   .card {
+      flex: 1 1 calc(80% - 20px); /* Two cards per row with gap */
+      margin-bottom: 20px; /* Add margin at the bottom for spacing */
+     
+  }
+  /* .card-body {
+    padding: 1rem;
+  } */
+
+  /* .card {
     max-width: 90%;
     margin-left: 7%;
     text-align: center;
@@ -951,7 +979,7 @@ footer {
   }
   .card-body {
     padding: 1rem;
-  }
+  } */
   .card h5 {
     font-size: 1rem;
   }
