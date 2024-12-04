@@ -768,17 +768,35 @@ footer {
   h4 {
     font-size: 0.8rem;
   }
-  .banner-right {
-    flex: 1 1 60%;
-    text-align: center;
+  .banner-section .row {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
   }
-  .col-md-4 {
-    flex: 1 1 40%;
+
+  .banner-content {
+    flex-direction: row; /* Ensure the content stays in a row */
+    align-items: center; /* Center the items vertically */
   }
-  .banner-img {
-    width: auto;
-    height: 100%;
+
+  .banner-left {
+      width: 40% !important; /* Adjust the width as needed */
+      height: 100%;
+      text-align: left; /* Align text to the left */
   }
+
+  .image-container {
+      width: 40%; /* Adjust the width as needed */
+      height: 100%;
+      justify-content: flex-end; /* Align the image to the right */
+
+  }
+
+  .image-container img {
+      width: 100%; /* Ensure the image takes up the full width of its container */
+      height: auto; /* Maintain the aspect ratio */
+  }
+
   .contact-div {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -902,6 +920,26 @@ footer {
   .banner-section .col-md-4 {
     display: none;
   }
+
+  .banner-section .row {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+  }
+
+  .banner-content {
+    flex-direction: row; /* Ensure the content stays in a row */
+    align-items: center; /* Center the items vertically */
+  }
+
+  .banner-left {
+      width: 100% !important; /* Adjust the width as needed */
+      height: 100%;
+      text-align: left; /* Align text to the left */
+      outline: #721d0a;
+  }
+
+
   .card {
     max-width: 90%;
     margin-left: 7%;
