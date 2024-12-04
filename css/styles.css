@@ -14,6 +14,9 @@ body {
   min-height: 100vh;
 }
 
+/* div {
+  outline: 2px solid red;
+} */
 
 h1 {
   font-family: 'Roboto', 'Montserrat Alternates', sans-serif; /* Changed to Roboto */
@@ -241,6 +244,7 @@ footer {
 #banner-section .container-fluid {
   padding: 4% 4% 5%;
   flex: 1;
+  height: 100vh;
 }
 
 /* Sections */
@@ -344,6 +348,8 @@ footer {
   font-weight: bold;
 }
 
+
+
 /* Buttons */
 .custom-btn {
   background-color: #721d0a;
@@ -383,29 +389,54 @@ footer {
   text-align: center;
   color: white;
   position: relative;
+  /* outline: 2px solid black; */
 }
+
 .banner-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  /* outline: 2px solid black; */
 }
+
 .banner-img {
   max-width: 100%;
   height: auto;
   display: block;
   border-radius: 0px;
+  /* outline: 2px solid blue; */
 }
+
 .banner-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  /* outline: 2px solid yellow; */
 }
+
 .banner-section .col-md-8 {
   width: 80%;
   margin: 0 auto;
+  /* outline: 2px solid purple; */
 }
+
+.image-container {
+  height: 100%; /* Ensure the parent div takes up the full height */
+  display: flex; /* Use flexbox to align the image */
+  align-items: center; /* Center the image vertically */
+  justify-content: flex-end; /* Align the image to the right */
+  width: 100%; /* Ensure the container takes the full width */
+  padding-right: 0; /* Remove any padding on the right */
+}
+
+.image-container img {
+  height: 100%; /* Make the image take up 100% of the height of the parent */
+  width: 100%; /* Ensure the image takes up the full width */
+  object-fit: cover; /* Ensure the image covers the entire area */
+}
+
 .text-container {
   text-align: left !important;
   padding: 30px 20px 20px 40px !important;
