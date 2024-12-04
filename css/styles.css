@@ -64,6 +64,10 @@ footer {
   margin-top: auto;
 }
 
+.icon-white {
+  color: white;
+}
+
 /* FONTS */
 
 .roboto-thin {
@@ -407,7 +411,16 @@ footer {
   /* outline: 2px solid blue; */
 }
 
-.banner-left {
+.Sirv {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0px;
+  /* outline: 2px solid blue; */
+  object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+.banner-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -419,7 +432,10 @@ footer {
 .banner-section .col-md-8 {
   width: 80%;
   margin: 0 auto;
-  /* outline: 2px solid purple; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center-align vertically */
+  text-align: center; /* Center-align text horizontally */
 }
 
 .image-container {
@@ -706,7 +722,7 @@ footer {
     padding: 2rem 2rem;
   }
   .navbar-brand img {
-    height: 2rem;
+    height: 2.5rem;
     margin-right: 5px;
   }
   .navbar-brand {
@@ -752,7 +768,7 @@ footer {
   h4 {
     font-size: 0.8rem;
   }
-  .banner-left {
+  .banner-right {
     flex: 1 1 60%;
     text-align: center;
   }

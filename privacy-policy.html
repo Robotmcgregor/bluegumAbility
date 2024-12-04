@@ -49,25 +49,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-  <!-- <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self';
-    script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net https://stackpath.bootstrapcdn.com https://kit.fontawesome.com https://www.googletagmanager.com;
-    style-src 'self' 'unsafe-inline' https://stackpath.bootstrapcdn.com https://fonts.googleapis.com;
-    img-src 'self' data: https://www.bluegumability.com;
-    font-src 'self' https://fonts.gstatic.com;
-    connect-src 'self';
-    frame-src 'none';
-    object-src 'none';
-    base-uri 'self';
-    form-action 'self';
-  "> -->
+  <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net https://stackpath.bootstrapcdn.com https://www.googletagmanager.com https://scripts.sirv.com;
+  style-src 'self' 'unsafe-inline' https://stackpath.bootstrapcdn.com https://fonts.googleapis.com 'unsafe-inline';
+  img-src 'self' data: https://www.bluegumability.com https://admin-bluegum.sirv.com https://trustseal-source.com https://cww.verifytrustseal.com https://s3.amazonaws.com;
+  font-src 'self' https://fonts.gstatic.com data:;
+  connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://admin-bluegum.sirv.com https://scripts.sirv.com;
+  frame-src 'none';
+  object-src 'none';
+  base-uri 'self';
+  form-action 'self';
+">
+
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
   <!-- FontAwsome -->
-  <script src="https://kit.fontawesome.com/e9eb3a54c1.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://kit.fontawesome.com/e9eb3a54c1.js" crossorigin="anonymous"></script> -->
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script>
@@ -206,7 +207,7 @@
 
   <section class="text-container white-section">
 
-    <h3>4. Purpose of Collecting Personal Information</h3>
+    <h3>4. Purpose of Collecting Personal Information</h4>
     <p>We collect and use personal information for purposes including, but not limited to:</p>
     <ul>
         <li>Providing disability services and support tailored to individual needs.</li>
@@ -311,13 +312,16 @@
         <i class="footer-i fab fa-twitter"></i>
       </a> -->
       <a href="https://www.facebook.com/people/Bluegum-Ability-Services/61551921666228/" target="_blank" aria-label="Facebook">
-        <i class="footer-i fab fa-facebook-f"></i>
+        <i class="footer-i bi bi-facebook icon-white"></i>
+        <!-- <i class="footer-i fab fa-facebook-f"></i> -->
       </a>
       <a href="https://www.instagram.com/bluegumability/" target="_blank" aria-label="Instagram">
-        <i class="footer-i fab fa-instagram"></i>
+        <i class="footer-i bi bi-instagram icon-white"></i>
+        <!-- <i class="footer-i fab fa-instagram"></i> -->
       </a>
       <a href="mailto:admin@bluegumability.com" aria-label="Email">
-        <i class="footer-i fas fa-envelope"></i>
+        <i class="footer-i bi bi-envelope icon-white"></i>
+        <!-- <i class="footer-i fas fa-envelope"></i> -->
       </a>
   
       <p class="footer-p">© Copyright 2024, Bluegum Ability Services</p>

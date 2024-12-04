@@ -57,18 +57,20 @@
     gtag('config', 'G-VSBY1EPRC9');
   </script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <!-- <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self';
-    script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net https://stackpath.bootstrapcdn.com https://kit.fontawesome.com https://www.googletagmanager.com;
-    style-src 'self' 'unsafe-inline' https://stackpath.bootstrapcdn.com https://fonts.googleapis.com;
-    img-src 'self' data: https://www.bluegumability.com;
-    font-src 'self' https://fonts.gstatic.com;
-    connect-src 'self';
-    frame-src 'none';
-    object-src 'none';
-    base-uri 'self';
-    form-action 'self';
-  "> -->
+  
+  <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net https://stackpath.bootstrapcdn.com https://www.googletagmanager.com https://scripts.sirv.com;
+  style-src 'self' 'unsafe-inline' https://stackpath.bootstrapcdn.com https://fonts.googleapis.com 'unsafe-inline';
+  img-src 'self' data: https://www.bluegumability.com https://admin-bluegum.sirv.com https://trustseal-source.com https://cww.verifytrustseal.com https://s3.amazonaws.com;
+  font-src 'self' https://fonts.gstatic.com data:;
+  connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://admin-bluegum.sirv.com https://scripts.sirv.com;
+  frame-src 'none';
+  object-src 'none';
+  base-uri 'self';
+  form-action 'self';
+">
+
 </head>
 
 <body>
@@ -323,13 +325,16 @@
     <p class="footer-r">Registered NDIS provider</p>
     <div>
       <a href="https://www.facebook.com/people/Bluegum-Ability-Services/61551921666228/" target="_blank" aria-label="Facebook">
-        <i class="footer-i fab fa-facebook-f"></i>
+        <i class="footer-i bi bi-facebook icon-white"></i>
+        <!-- <i class="footer-i fab fa-facebook-f"></i> -->
       </a>
       <a href="https://www.instagram.com/bluegumability/" target="_blank" aria-label="Instagram">
-        <i class="footer-i fab fa-instagram"></i>
+        <i class="footer-i bi bi-instagram icon-white"></i>
+        <!-- <i class="footer-i fab fa-instagram"></i> -->
       </a>
       <a href="mailto:admin@bluegumability.com" aria-label="Email">
-        <i class="footer-i fas fa-envelope"></i>
+        <i class="footer-i bi bi-envelope icon-white"></i>
+        <!-- <i class="footer-i fas fa-envelope"></i> -->
       </a>
 
       <p class="footer-p">© Copyright 2024, Bluegum Ability Services</p>

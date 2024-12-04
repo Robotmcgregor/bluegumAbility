@@ -48,20 +48,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-  <style>
-    #trust-seal-container {
-      /* Remove the trust seal container style */
-      display: none;
-    }
-  </style>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
   <!-- FontAwsome -->
-  <script src="https://kit.fontawesome.com/e9eb3a54c1.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://kit.fontawesome.com/e9eb3a54c1.js" crossorigin="anonymous"></script> -->
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script>
@@ -83,21 +78,64 @@
   gtag('config', 'G-VSBY1EPRC9');
 </script>
 
-<!-- <meta http-equiv="Content-Security-Policy" content="
+<meta http-equiv="Content-Security-Policy" content="
     default-src 'self';
-    script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net https://stackpath.bootstrapcdn.com https://kit.fontawesome.com https://www.googletagmanager.com;
-    style-src 'self' 'unsafe-inline' https://stackpath.bootstrapcdn.com https://fonts.googleapis.com;
-    img-src 'self' data: https://www.bluegumability.com;
-    font-src 'self' https://fonts.gstatic.com;
-    connect-src 'self';
+    script-src 'self' 'unsafe-inline' https://code.jquery.com https://cdn.jsdelivr.net https://stackpath.bootstrapcdn.com https://www.googletagmanager.com https://scripts.sirv.com;
+    style-src 'self' 'unsafe-inline' https://stackpath.bootstrapcdn.com https://fonts.googleapis.com 'unsafe-inline';
+    img-src 'self' data: https://www.bluegumability.com https://admin-bluegum.sirv.com https://trustseal-source.com https://cww.verifytrustseal.com https://s3.amazonaws.com;
+    font-src 'self' https://fonts.gstatic.com data:;
+    connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://admin-bluegum.sirv.com https://scripts.sirv.com;
     frame-src 'none';
     object-src 'none';
     base-uri 'self';
     form-action 'self';
-  "> -->
+">
+
 </head>
 
 <body>
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-white">
+  <a class="navbar-brand" href="index.html">
+    <!-- <img id="brand-logo" src="images/jpeg-optimizer_Brandmark_Standard_Transparent.png" alt="Bluegum Ability Logo" height="50"> -->
+    <img id="brand-logo" class="Sirv" data-src="https://admin-bluegum.sirv.com/Images/jpeg-optimizer_Brandmark_Standard_Transparent.png" alt="Bluegum Ability logo">
+    <span id="brand-text"class="roboto-brand">Bluegum Ability</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+          <!-- <a class="dropdown-item" href="houses.html">Supported Independent Living (SIL)</a> -->
+          <a class="dropdown-item" href="coordination.html">Support Coordination (CoS)</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="policyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Policies
+        </a>
+        <div class="dropdown-menu" aria-labelledby="policyDropdown">
+          <a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a>
+          <a class="dropdown-item" href="transition-policy.html">Exit and Transition Policy</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
   <!-- Banner Section -->
   <section class="banner-section">
@@ -117,6 +155,8 @@
       </div>
     </div>
   </section>
+
+ 
 
 
 <section class="text-container">
@@ -239,13 +279,16 @@
         <i class="footer-i fab fa-twitter"></i>
       </a> -->
       <a href="https://www.facebook.com/people/Bluegum-Ability-Services/61551921666228/" target="_blank" aria-label="Facebook">
-        <i class="footer-i fab fa-facebook-f"></i>
+        <i class="footer-i bi bi-facebook icon-white"></i>
+        <!-- <i class="footer-i fab fa-facebook-f"></i> -->
       </a>
       <a href="https://www.instagram.com/bluegumability/" target="_blank" aria-label="Instagram">
-        <i class="footer-i fab fa-instagram"></i>
+        <i class="footer-i bi bi-instagram icon-white"></i>
+        <!-- <i class="footer-i fab fa-instagram"></i> -->
       </a>
       <a href="mailto:admin@bluegumability.com" aria-label="Email">
-        <i class="footer-i fas fa-envelope"></i>
+        <i class="footer-i bi bi-envelope icon-white"></i>
+        <!-- <i class="footer-i fas fa-envelope"></i> -->
       </a>
   
       <p class="footer-p">© Copyright 2024, Bluegum Ability Services</p>
